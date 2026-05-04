@@ -1,0 +1,138 @@
+{
+  "id": "pcod-pcos",
+  "title": "PCOD / PCOS",
+  "tagline": "Hormonal balance starts on your plate",
+  "hero": "🌸",
+  "color": "pink",
+  "oneLiner": "PCOS is a hormonal condition where the ovaries produce excess male hormones, causing irregular periods, cysts, and metabolic issues.",
+  "cards": [
+    {
+      "id": "p1",
+      "emoji": "🌸",
+      "title": "PCOD vs PCOS — What's the Difference?",
+      "body": "PCOD (Polycystic Ovarian Disease) means many follicles in the ovary don't mature fully. PCOS (Polycystic Ovarian Syndrome) is more severe — a complex hormonal disorder affecting metabolism, hormones, and reproduction."
+    },
+    {
+      "id": "p2",
+      "emoji": "⚡",
+      "title": "The Insulin-Androgen Connection",
+      "body": "High insulin (from eating too much sugar/refined carbs) stimulates the ovaries to produce excess androgens (male hormones like testosterone). This disrupts ovulation — the root of most PCOS symptoms."
+    },
+    {
+      "id": "p3",
+      "emoji": "📅",
+      "title": "Why Periods Go Irregular",
+      "body": "High androgens interfere with normal ovulation. Without regular ovulation, the monthly cycle breaks down — periods become irregular (more than 35 days apart), very heavy, or disappear for months."
+    },
+    {
+      "id": "p4",
+      "emoji": "⚖️",
+      "title": "Weight and PCOS — Chicken or Egg?",
+      "body": "Insulin resistance makes it easy to gain weight and very hard to lose it. But even a 5–10% weight loss in overweight women with PCOS can restart regular ovulation and dramatically improve symptoms."
+    },
+    {
+      "id": "p5",
+      "emoji": "🥗",
+      "title": "Low GI Diet is the Best Medicine",
+      "body": "Foods with low glycemic index (GI) cause slower glucose rise, less insulin spike, less androgen production. Millets, whole grains, dal, vegetables, and lean protein are the foundation of PCOS diet management."
+    },
+    {
+      "id": "p6",
+      "emoji": "💪",
+      "title": "Strength Training for PCOS",
+      "body": "Resistance exercise (weights, yoga, bodyweight workouts) improves insulin sensitivity in muscles significantly. Combined with aerobics, it's one of the most effective PCOS treatments — often working as well as medication."
+    },
+    {
+      "id": "p7",
+      "emoji": "😴",
+      "title": "Stress & Sleep Disrupt Hormones",
+      "body": "Cortisol (stress hormone) worsens insulin resistance and spikes androgens. Poor sleep raises cortisol. Managing sleep (7–8 hours) and reducing chronic stress is essential for PCOS hormone management."
+    },
+    {
+      "id": "p8",
+      "emoji": "🔬",
+      "title": "PCOS and Long-Term Health",
+      "body": "PCOS increases lifetime risk of type 2 diabetes, heart disease, and endometrial cancer. Managing it early with lifestyle changes dramatically reduces these risks — it's not just about fertility."
+    }
+  ],
+  "doEat": [
+    { "name": "Millets (jowar, bajra, ragi)", "emoji": "🌾", "note": "Low GI, slow insulin response" },
+    { "name": "Dal & legumes", "emoji": "🫘", "note": "High protein + low GI — stabilises insulin" },
+    { "name": "Leafy greens", "emoji": "🥬", "note": "Magnesium helps insulin sensitivity" },
+    { "name": "Berries & low-sugar fruit", "emoji": "🫐", "note": "Antioxidants + low fructose" },
+    { "name": "Fatty fish", "emoji": "🐟", "note": "Omega-3 reduces androgen levels and inflammation" },
+    { "name": "Nuts & seeds (flax, chia, pumpkin)", "emoji": "🌻", "note": "Omega-3, zinc, magnesium for hormones" },
+    { "name": "Cinnamon", "emoji": "🫙", "note": "Improves insulin sensitivity, may help regulate cycle" },
+    { "name": "Greek yoghurt / low-fat curd", "emoji": "🥛", "note": "Protein + probiotics, anti-inflammatory" },
+    { "name": "Eggs", "emoji": "🥚", "note": "High protein reduces hunger, stabilises blood sugar" }
+  ],
+  "dontEat": [
+    { "name": "White rice in large portions", "emoji": "🍚", "note": "High GI — spikes insulin quickly" },
+    { "name": "Maida & processed bread", "emoji": "🍞", "note": "Fast-digesting, big insulin spike" },
+    { "name": "Sugary drinks & packaged juices", "emoji": "🥤", "note": "Fastest insulin spike — worst for PCOS" },
+    { "name": "Sweets & mithai", "emoji": "🍮", "note": "Sugar surge drives androgen production" },
+    { "name": "Processed / junk food", "emoji": "🍟", "note": "Trans fat + refined carbs increase inflammation" },
+    { "name": "Alcohol", "emoji": "🍺", "note": "Disrupts oestrogen metabolism and liver function" },
+    { "name": "Soy in excess", "emoji": "🫘", "note": "Phytoestrogens may disrupt hormonal balance in sensitive women" }
+  ],
+  "lifestyle": [
+    "Exercise 150+ minutes per week — combine aerobics (walking, cycling) with strength training (yoga, weights).",
+    "Eat a low-GI diet: millets, whole grains, dal, vegetables, lean protein at every meal.",
+    "Sleep 7–8 hours — poor sleep raises cortisol and worsens insulin resistance.",
+    "Manage stress — yoga, meditation, and breathing exercises reduce cortisol and androgens.",
+    "Lose 5–10% of body weight if overweight — this alone can restart ovulation for many women.",
+    "Track your menstrual cycle with an app to monitor pattern changes and share with doctor.",
+    "Get regular blood tests: fasting insulin, testosterone, AMH, thyroid, HbA1c — at least annually.",
+    "Don't self-prescribe hormonal pills without a doctor — oral contraceptives for PCOS must be tailored to your case."
+  ],
+  "redFlags": [
+    "No period for 3 or more months (amenorrhoea)",
+    "Heavy bleeding that soaks a pad every hour for several hours",
+    "Severe pelvic pain during or outside periods",
+    "Rapid unexplained weight gain with severe acne and excess facial hair — may indicate higher androgen issue",
+    "Difficulty getting pregnant after 12 months of trying (6 months if over 35) — seek fertility evaluation",
+    "Signs of diabetes: excessive thirst, frequent urination, fatigue — PCOS strongly predisposes to Type 2 diabetes"
+  ],
+  "quiz": [
+    {
+      "id": "pq1",
+      "type": "mcq",
+      "q": "What drives excess androgen production in PCOS?",
+      "options": ["High calcium intake", "High insulin levels from sugary/high-carb diet", "Vitamin D deficiency", "Too much exercise"],
+      "correct": 1,
+      "why": "High insulin from sugar-heavy diet stimulates ovaries to produce excess androgens — the root hormonal cascade in PCOS."
+    },
+    {
+      "id": "pq2",
+      "type": "tf",
+      "q": "PCOS only affects fertility and has no long-term health risks.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "why": "PCOS significantly raises lifetime risk of Type 2 diabetes, heart disease, and endometrial cancer. It's a metabolic condition, not just a reproductive one."
+    },
+    {
+      "id": "pq3",
+      "type": "mcq",
+      "q": "Which dietary approach best helps manage PCOS?",
+      "options": ["High-fat, low-carb only", "Low glycemic index diet with whole grains, dal, and vegetables", "Avoiding all carbohydrates", "High-sugar fruit diet"],
+      "correct": 1,
+      "why": "Low-GI foods cause slower glucose and insulin rise, reducing the androgen stimulus — the cornerstone of PCOS dietary management."
+    },
+    {
+      "id": "pq4",
+      "type": "tf",
+      "q": "Even a 5–10% weight loss can help restart ovulation in women with PCOS.",
+      "options": ["True", "False"],
+      "correct": 0,
+      "why": "Multiple studies show that modest weight loss (5–10%) significantly improves insulin sensitivity and can restore regular ovulation in PCOS."
+    },
+    {
+      "id": "pq5",
+      "type": "mcq",
+      "q": "Which type of exercise is especially beneficial for PCOS?",
+      "options": ["No exercise — rest is better", "Strength/resistance training combined with aerobics", "Only walking", "Only yoga"],
+      "correct": 1,
+      "why": "Resistance training significantly improves insulin sensitivity in muscle cells — particularly important for PCOS management when combined with aerobic exercise."
+    }
+  ]
+}

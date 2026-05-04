@@ -1,0 +1,139 @@
+{
+  "id": "diabetes",
+  "title": "Diabetes",
+  "tagline": "Control blood sugar, control your life",
+  "hero": "🩸",
+  "color": "red",
+  "oneLiner": "Diabetes means your blood sugar stays too high because your body can't use insulin properly or doesn't make enough.",
+  "cards": [
+    {
+      "id": "d1",
+      "emoji": "🍬",
+      "title": "What is Blood Sugar?",
+      "body": "When you eat, your body breaks food into glucose (sugar) and sends it into your blood. Insulin — a hormone made by your pancreas — acts like a key that lets glucose enter your cells for energy."
+    },
+    {
+      "id": "d2",
+      "emoji": "🔑",
+      "title": "The Insulin Problem",
+      "body": "In Type 2 diabetes (most common), cells stop responding to insulin — this is called insulin resistance. In Type 1, the pancreas barely makes any insulin at all."
+    },
+    {
+      "id": "d3",
+      "emoji": "📈",
+      "title": "Why Sugar Rises",
+      "body": "When insulin can't do its job, glucose piles up in the bloodstream instead of entering cells. Eating sugary or high-carb food in big amounts causes rapid spikes."
+    },
+    {
+      "id": "d4",
+      "emoji": "🍚",
+      "title": "Rice, Roti & GI",
+      "body": "White rice and maida (refined wheat) digest fast, flooding your blood with glucose quickly. Choosing brown rice, millets, or whole-wheat roti in smaller portions slows this spike."
+    },
+    {
+      "id": "d5",
+      "emoji": "🏃",
+      "title": "Exercise is Like a Second Insulin",
+      "body": "Physical activity makes your muscles absorb glucose directly — even without insulin. A 30-minute walk after meals can cut post-meal sugar spikes significantly."
+    },
+    {
+      "id": "d6",
+      "emoji": "⏱️",
+      "title": "Meal Timing Matters",
+      "body": "Long gaps between meals let blood sugar drop dangerously in people on medication. Eating smaller meals every 3–4 hours keeps levels stable through the day."
+    },
+    {
+      "id": "d7",
+      "emoji": "🧪",
+      "title": "Pre-diabetes is Reversible",
+      "body": "Pre-diabetes means sugar is higher than normal but not yet diabetic range. Diet changes and weight loss of even 5–7% of body weight can completely reverse it."
+    },
+    {
+      "id": "d8",
+      "emoji": "🌙",
+      "title": "Sleep & Stress Raise Sugar",
+      "body": "Poor sleep and stress release cortisol, which raises blood glucose. Managing stress through yoga, breathing exercises, or 7–8 hours of sleep directly helps diabetes control."
+    }
+  ],
+  "doEat": [
+    { "name": "Brown rice / Millets", "emoji": "🌾", "note": "Slower digestion, less glucose spike" },
+    { "name": "Dal & legumes", "emoji": "🫘", "note": "High protein + fibre, slow carb absorption" },
+    { "name": "Leafy greens", "emoji": "🥬", "note": "Very low carb, high in magnesium" },
+    { "name": "Bitter gourd (karela)", "emoji": "🥒", "note": "Contains plant insulin-like compounds" },
+    { "name": "Fenugreek (methi)", "emoji": "🌿", "note": "Slows glucose absorption" },
+    { "name": "Whole fruits (not juice)", "emoji": "🍎", "note": "Fibre slows sugar release; avoid mango/banana excess" },
+    { "name": "Eggs & fish", "emoji": "🥚", "note": "Protein doesn't spike blood sugar" },
+    { "name": "Nuts & seeds", "emoji": "🥜", "note": "Healthy fat + protein, stabilises sugar" },
+    { "name": "Curd / Greek yoghurt", "emoji": "🥛", "note": "Probiotics help insulin sensitivity" },
+    { "name": "Cinnamon in chai", "emoji": "🫙", "note": "May improve insulin sensitivity" }
+  ],
+  "dontEat": [
+    { "name": "Maida (white flour)", "emoji": "🍞", "note": "Fast-digesting, big sugar spike" },
+    { "name": "White rice in large portions", "emoji": "🍚", "note": "High glycemic index" },
+    { "name": "Sugary drinks & fruit juice", "emoji": "🥤", "note": "Sugar enters blood instantly with no fibre" },
+    { "name": "Mithai / sweets", "emoji": "🍮", "note": "Concentrated sugar" },
+    { "name": "Fried snacks", "emoji": "🍟", "note": "Trans fat worsens insulin resistance" },
+    { "name": "Packaged biscuits & namkeen", "emoji": "🍪", "note": "Hidden sugar + refined carbs" },
+    { "name": "Alcohol", "emoji": "🍺", "note": "Unpredictable sugar swings, especially on medication" },
+    { "name": "Sweetened curd / flavoured milk", "emoji": "🧋", "note": "Added sugar spike" }
+  ],
+  "lifestyle": [
+    "Walk for at least 30 minutes after your largest meal — reduces post-meal glucose spike by up to 30%.",
+    "Check your blood sugar at the same time daily to spot patterns (morning fasting + 2 hours after meals).",
+    "Reduce portion size of rice/roti by 25% and fill the rest with vegetable sabzi or dal.",
+    "Avoid eating fruit as juice — always eat whole fruit with the fibre.",
+    "Sleep 7–8 hours. Even one bad night's sleep increases insulin resistance the next day.",
+    "Practice 5-minute deep breathing or meditation daily to lower cortisol (stress hormone that raises sugar).",
+    "Stay hydrated — dehydration concentrates blood glucose. Aim for 8–10 glasses of water daily."
+  ],
+  "redFlags": [
+    "Blood sugar above 300 mg/dL or you feel confused or very drowsy",
+    "Sudden weakness, shakiness, sweating — may be dangerously low blood sugar (hypoglycaemia)",
+    "Chest pain, breathlessness, or leg swelling — diabetes affects the heart and kidneys",
+    "Foot wounds that are not healing or turning black",
+    "Blurred vision that has worsened over weeks",
+    "Frequent urination at night combined with extreme thirst"
+  ],
+  "quiz": [
+    {
+      "id": "dq1",
+      "type": "mcq",
+      "q": "What does insulin do in the body?",
+      "options": ["Breaks down fat", "Lets glucose enter your cells for energy", "Makes you hungry", "Produces red blood cells"],
+      "correct": 1,
+      "why": "Insulin is the 'key' that unlocks cells so glucose from food can enter and be used as fuel."
+    },
+    {
+      "id": "dq2",
+      "type": "tf",
+      "q": "Fruit juice is healthier than whole fruit for a diabetic.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "why": "Juice removes the fibre, so sugar enters the bloodstream very quickly. Whole fruit is much better."
+    },
+    {
+      "id": "dq3",
+      "type": "mcq",
+      "q": "Which food has the lowest glycemic impact?",
+      "options": ["White rice", "Brown rice / millets", "Maida roti", "Potato"],
+      "correct": 1,
+      "why": "Brown rice and millets digest slower, causing a gradual glucose rise instead of a spike."
+    },
+    {
+      "id": "dq4",
+      "type": "tf",
+      "q": "A 30-minute walk after meals can help reduce blood sugar spikes.",
+      "options": ["True", "False"],
+      "correct": 0,
+      "why": "Muscles absorb glucose directly during exercise, working like a second insulin — very effective post-meal."
+    },
+    {
+      "id": "dq5",
+      "type": "mcq",
+      "q": "Pre-diabetes can be reversed by:",
+      "options": ["Only medicines", "Diet changes and 5–7% weight loss", "Eating less sugar only", "It cannot be reversed"],
+      "correct": 1,
+      "why": "Multiple studies show diet changes and modest weight loss fully reverse pre-diabetes in many people."
+    }
+  ]
+}

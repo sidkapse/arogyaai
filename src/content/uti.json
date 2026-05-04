@@ -1,0 +1,130 @@
+{
+  "id": "uti",
+  "title": "UTI (Urinary Tract Infection)",
+  "tagline": "Flush it out before it spreads",
+  "hero": "🚽",
+  "color": "cyan",
+  "oneLiner": "A UTI is a bacterial infection in any part of the urinary tract — most commonly the bladder — causing burning, urgency, and frequent urination.",
+  "cards": [
+    {
+      "id": "u1",
+      "emoji": "🚽",
+      "title": "What Causes UTI?",
+      "body": "E. coli bacteria (from the gut) normally live harmlessly near the genitals. Problems start when they travel up the urethra into the bladder. Women are 8–10x more likely to get UTIs because of their shorter urethra."
+    },
+    {
+      "id": "u2",
+      "emoji": "💧",
+      "title": "Dehydration = Bacteria Stay Longer",
+      "body": "When you don't drink enough water, urine becomes concentrated and you urinate less. Bacteria have more time to cling to the bladder wall and multiply. Drinking more water literally flushes bacteria out."
+    },
+    {
+      "id": "u3",
+      "emoji": "🔁",
+      "title": "Why UTIs Keep Coming Back",
+      "body": "Recurrent UTIs (3+ per year) are common in Indian women. Causes include incomplete antibiotic treatment, poor hygiene, low water intake, diabetes (high sugar in urine feeds bacteria), and low oestrogen after menopause."
+    },
+    {
+      "id": "u4",
+      "emoji": "🍒",
+      "title": "Cranberry — Fact vs Myth",
+      "body": "Cranberry has a compound (PAC) that prevents bacteria from sticking to the bladder wall. Research shows it can reduce recurrent UTIs — but only if taken as unsweetened cranberry juice or supplements, not sugary drinks."
+    },
+    {
+      "id": "u5",
+      "emoji": "🧫",
+      "title": "Why You Must Finish Antibiotics",
+      "body": "Stopping antibiotics early (because you feel better) leaves behind stronger surviving bacteria. These become antibiotic-resistant — your next UTI will be harder to treat. Always complete the full course."
+    },
+    {
+      "id": "u6",
+      "emoji": "🧴",
+      "title": "Hygiene that Prevents UTI",
+      "body": "Wiping back-to-front after using the toilet brings gut bacteria toward the urethra. Always wipe front-to-back. Avoid harsh soaps or douches that disturb healthy vaginal flora which protects against infection."
+    },
+    {
+      "id": "u7",
+      "emoji": "👩‍⚕️",
+      "title": "UTI vs Kidney Infection",
+      "body": "A bladder UTI causes burning and urgency. If infection travels to the kidneys (pyelonephritis), you get fever, back pain, nausea, and chills — this is a more serious infection requiring urgent treatment."
+    }
+  ],
+  "doEat": [
+    { "name": "Water (2.5–3 litres daily)", "emoji": "💧", "note": "Flushes bacteria from the urinary tract" },
+    { "name": "Cranberry juice (unsweetened)", "emoji": "🍒", "note": "PAC compounds prevent bacteria from sticking" },
+    { "name": "Probiotic curd", "emoji": "🥛", "note": "Restores good bacteria, especially after antibiotics" },
+    { "name": "Amla (Indian gooseberry)", "emoji": "🟢", "note": "Vitamin C acidifies urine, inhibits bacteria" },
+    { "name": "Lemon water", "emoji": "🍋", "note": "Vitamin C + hydration" },
+    { "name": "Garlic", "emoji": "🧄", "note": "Natural antimicrobial properties" },
+    { "name": "Cucumber", "emoji": "🥒", "note": "High water content, diuretic effect" },
+    { "name": "Coconut water", "emoji": "🥥", "note": "Hydrating and mildly antimicrobial" }
+  ],
+  "dontEat": [
+    { "name": "Sugary foods & drinks", "emoji": "🍬", "note": "High blood sugar and sugar in urine feeds bacteria" },
+    { "name": "Alcohol", "emoji": "🍺", "note": "Dehydrating and irritates bladder lining" },
+    { "name": "Caffeine in excess", "emoji": "☕", "note": "Bladder irritant, increases urgency" },
+    { "name": "Spicy food (during active UTI)", "emoji": "🌶️", "note": "Irritates inflamed bladder mucosa" },
+    { "name": "Carbonated drinks", "emoji": "🥤", "note": "Phosphoric acid irritates the bladder" },
+    { "name": "Artificial sweeteners", "emoji": "🍭", "note": "May irritate bladder in sensitive individuals" }
+  ],
+  "lifestyle": [
+    "Drink at least 2.5–3 litres of water daily — the most powerful UTI prevention.",
+    "Never hold urine for long periods — urinate as soon as you feel the urge.",
+    "Urinate after sexual intercourse — helps flush out bacteria that may have entered the urethra.",
+    "Always wipe front-to-back after using the toilet.",
+    "Wear breathable, cotton underwear — synthetic fabrics trap moisture and bacteria.",
+    "Avoid using harsh soaps, douches, or scented products near the genitals.",
+    "Complete the full antibiotic course — never stop early even if symptoms improve.",
+    "If you have diabetes, control blood sugar to prevent UTI recurrence."
+  ],
+  "redFlags": [
+    "Fever above 38.5°C combined with back or flank pain — possible kidney infection",
+    "Blood in urine (pink or red colour) with fever",
+    "Symptoms lasting more than 3–4 days despite treatment",
+    "Severe lower abdominal pain or cramping",
+    "UTI in a man, elderly person, child, or pregnant woman — requires urgent doctor review",
+    "Confusion or altered mental state in an elderly person with UTI-like symptoms"
+  ],
+  "quiz": [
+    {
+      "id": "uq1",
+      "type": "mcq",
+      "q": "Why are women more prone to UTIs than men?",
+      "options": ["Hormonal differences only", "Shorter urethra allows bacteria to reach the bladder more easily", "They drink less water", "They have weaker immune systems"],
+      "correct": 1,
+      "why": "Women have a urethra of about 4 cm vs. 20 cm in men — bacteria have a much shorter distance to travel to the bladder."
+    },
+    {
+      "id": "uq2",
+      "type": "tf",
+      "q": "You can stop antibiotics once UTI symptoms disappear.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "why": "Stopping early leaves stronger bacteria behind — they become antibiotic-resistant. Always complete the full prescribed course."
+    },
+    {
+      "id": "uq3",
+      "type": "mcq",
+      "q": "What does cranberry do to help prevent UTIs?",
+      "options": ["Kills bacteria directly", "Prevents bacteria from sticking to the bladder wall", "Acidifies the bladder", "Flushes out stones"],
+      "correct": 1,
+      "why": "Cranberry contains PAC compounds that prevent E. coli from adhering to bladder wall lining — reducing recurrent UTIs."
+    },
+    {
+      "id": "uq4",
+      "type": "tf",
+      "q": "Fever with back pain during a UTI may indicate a kidney infection.",
+      "options": ["True", "False"],
+      "correct": 0,
+      "why": "Fever + back/flank pain signals the infection may have spread from the bladder to the kidneys (pyelonephritis) — needs urgent medical care."
+    },
+    {
+      "id": "uq5",
+      "type": "mcq",
+      "q": "Which habit best prevents recurrent UTIs?",
+      "options": ["Taking vitamin supplements", "Drinking 2.5–3 litres of water daily", "Avoiding all dairy", "Using antibacterial soap"],
+      "correct": 1,
+      "why": "High water intake keeps urine diluted and flushes bacteria out of the urinary tract before they can cause infection."
+    }
+  ]
+}

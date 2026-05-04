@@ -1,0 +1,131 @@
+{
+  "id": "fatty-liver",
+  "title": "Fatty Liver",
+  "tagline": "Your liver is your chemical factory — don't overload it",
+  "hero": "🫁",
+  "color": "orange",
+  "oneLiner": "Fatty liver means excess fat has built up inside liver cells. The liver can't clean your blood or process nutrients properly.",
+  "cards": [
+    {
+      "id": "fl1",
+      "emoji": "🫁",
+      "title": "What Does the Liver Do?",
+      "body": "Your liver is like a mega-factory — it filters toxins from blood, processes nutrients, makes bile for digestion, regulates blood sugar, and produces proteins. You cannot live without it."
+    },
+    {
+      "id": "fl2",
+      "emoji": "🫐",
+      "title": "How Fatty Liver Develops",
+      "body": "When you eat excess calories (especially sugar and refined carbs), the liver converts the extra energy into fat. If this fat builds up faster than the liver can process it, fat deposits form inside liver cells."
+    },
+    {
+      "id": "fl3",
+      "emoji": "🍺",
+      "title": "Alcoholic vs. Non-Alcoholic",
+      "body": "Alcoholic fatty liver is caused by alcohol damaging liver cells. Non-alcoholic fatty liver disease (NAFLD) is increasingly common in India due to obesity, diabetes, and sugar-heavy diets — even without a drop of alcohol."
+    },
+    {
+      "id": "fl4",
+      "emoji": "🍬",
+      "title": "Fructose is the Hidden Villain",
+      "body": "Fructose (found in sugary drinks, packaged juices, sweets) is processed almost exclusively by the liver. Large amounts overwhelm the liver and are stored directly as fat. Sugary drinks are a leading NAFLD cause."
+    },
+    {
+      "id": "fl5",
+      "emoji": "📊",
+      "title": "Grade 1, 2, 3 Explained",
+      "body": "Fatty liver is graded by severity on ultrasound. Grade 1 (mild) is reversible with lifestyle changes. Grade 3 (severe) can progress to cirrhosis (permanent scarring) if untreated."
+    },
+    {
+      "id": "fl6",
+      "emoji": "⚖️",
+      "title": "Weight Loss Reverses Fatty Liver",
+      "body": "Losing 7–10% of body weight significantly reduces liver fat — studies show Grade 1 NAFLD can completely resolve. No special medicine exists for NAFLD; diet and exercise are the treatment."
+    },
+    {
+      "id": "fl7",
+      "emoji": "☕",
+      "title": "Coffee Protects the Liver",
+      "body": "Surprisingly, 2–3 cups of plain black coffee daily are associated with lower rates of liver disease progression. Coffee contains antioxidants that reduce liver inflammation — but skip the sugar and milk."
+    }
+  ],
+  "doEat": [
+    { "name": "Green leafy vegetables", "emoji": "🥬", "note": "Antioxidants reduce liver inflammation" },
+    { "name": "Garlic", "emoji": "🧄", "note": "Activates liver enzymes, anti-inflammatory" },
+    { "name": "Walnuts", "emoji": "🪨", "note": "Omega-3 reduces liver fat" },
+    { "name": "Olive oil", "emoji": "🫒", "note": "Reduces liver enzymes and fat accumulation" },
+    { "name": "Fatty fish (salmon, mackerel)", "emoji": "🐟", "note": "Omega-3 fatty acids directly reduce liver fat" },
+    { "name": "Oats", "emoji": "🥣", "note": "Beta-glucan fibre supports liver health" },
+    { "name": "Plain black coffee (2–3 cups)", "emoji": "☕", "note": "Proven to slow liver disease progression" },
+    { "name": "Lemon water", "emoji": "🍋", "note": "Vitamin C supports liver detox pathways" },
+    { "name": "Berries & amla", "emoji": "🫐", "note": "Antioxidants protect liver cells" },
+    { "name": "Turmeric in food", "emoji": "🟡", "note": "Curcumin reduces liver inflammation" }
+  ],
+  "dontEat": [
+    { "name": "Alcohol (any amount)", "emoji": "🍺", "note": "Directly toxic to liver cells" },
+    { "name": "Sugary drinks & packaged juices", "emoji": "🥤", "note": "Fructose overloads liver — top NAFLD cause" },
+    { "name": "Maida & white bread", "emoji": "🍞", "note": "Refined carbs converted to liver fat" },
+    { "name": "Fried foods", "emoji": "🍟", "note": "Trans + saturated fat deposits in liver" },
+    { "name": "Red meat in excess", "emoji": "🥩", "note": "Saturated fat adds to liver fat load" },
+    { "name": "Packaged sweets & mithai", "emoji": "🍮", "note": "Concentrated fructose and fat" },
+    { "name": "Very high-fat dairy", "emoji": "🧀", "note": "Adds to overall calorie overload" }
+  ],
+  "lifestyle": [
+    "Lose 7–10% of body weight through diet and exercise — the single most effective treatment for NAFLD.",
+    "Completely avoid alcohol — even small amounts accelerate fatty liver progression.",
+    "Cut out sugary drinks including packaged fruit juice — replace with water, coconut water, or plain chaas.",
+    "Exercise 150–200 minutes per week (aerobic + strength training) — both types reduce liver fat.",
+    "Get a liver ultrasound and liver function tests (LFT) annually if you have grade 1 fatty liver.",
+    "Avoid unnecessary medications and supplements — many are processed by the liver and can worsen damage."
+  ],
+  "redFlags": [
+    "Yellowing of skin or eyes (jaundice) — sign of liver failure",
+    "Severe pain in upper right abdomen",
+    "Swollen abdomen (ascites) — fluid accumulation from advanced liver disease",
+    "Extreme fatigue with nausea and no appetite for several days",
+    "Very dark urine (tea-coloured) or pale stool",
+    "Liver enzymes (SGPT/SGOT) more than 3x normal on blood test — seek urgent review"
+  ],
+  "quiz": [
+    {
+      "id": "flq1",
+      "type": "mcq",
+      "q": "What is the main cause of non-alcoholic fatty liver (NAFLD) in India?",
+      "options": ["Eating too much protein", "Excess sugar, refined carbs, and obesity", "Vitamin deficiency", "Not drinking enough water"],
+      "correct": 1,
+      "why": "NAFLD is driven by excess calories — especially from sugar, refined carbs, and overall obesity — not alcohol."
+    },
+    {
+      "id": "flq2",
+      "type": "tf",
+      "q": "Fatty liver (Grade 1) can be reversed with diet and exercise.",
+      "options": ["True", "False"],
+      "correct": 0,
+      "why": "Grade 1 fatty liver is fully reversible. Losing 7–10% of body weight can eliminate liver fat deposits completely."
+    },
+    {
+      "id": "flq3",
+      "type": "mcq",
+      "q": "Which type of sugar is most directly linked to fatty liver?",
+      "options": ["Glucose", "Fructose", "Lactose", "Maltose"],
+      "correct": 1,
+      "why": "Fructose is processed almost exclusively in the liver. Excess fructose from soft drinks and juices is directly stored as liver fat."
+    },
+    {
+      "id": "flq4",
+      "type": "tf",
+      "q": "Plain black coffee (2–3 cups) is harmful to the liver.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "why": "Research consistently shows 2–3 cups of black coffee daily is protective for the liver, reducing inflammation and slowing disease."
+    },
+    {
+      "id": "flq5",
+      "type": "mcq",
+      "q": "The most effective treatment for NAFLD (non-alcoholic fatty liver) is:",
+      "options": ["Liver supplements", "7–10% weight loss through diet and exercise", "High-protein diet only", "Avoiding all fats"],
+      "correct": 1,
+      "why": "No approved medicine exists for NAFLD. Weight loss of 7–10% is the most evidence-backed treatment."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": "kidney-stones",
+  "title": "Kidney Stones",
+  "tagline": "Drink more water, pass less pain",
+  "hero": "🪨",
+  "color": "yellow",
+  "oneLiner": "Kidney stones are hard mineral deposits that form when urine is too concentrated, causing excruciating pain when they try to pass.",
+  "cards": [
+    {
+      "id": "ks1",
+      "emoji": "🪨",
+      "title": "How Stones Form",
+      "body": "When urine has high concentrations of minerals (calcium, oxalate, uric acid) and not enough water to dilute them, they crystalise and stick together, forming hard stones inside the kidneys."
+    },
+    {
+      "id": "ks2",
+      "emoji": "💧",
+      "title": "Dehydration is the #1 Cause",
+      "body": "Not drinking enough water is the single biggest risk factor. In hot Indian summers, dehydration is common. Dark yellow urine = you are not drinking enough. Aim for pale yellow urine throughout the day."
+    },
+    {
+      "id": "ks3",
+      "emoji": "🥗",
+      "title": "Oxalate Stones — Most Common",
+      "body": "80% of kidney stones are calcium-oxalate stones. High-oxalate foods (spinach, tomato, nuts, chocolate, tea) combined with low calcium intake can trigger these. Counter-intuitively, you need calcium WITH meals."
+    },
+    {
+      "id": "ks4",
+      "emoji": "🧪",
+      "title": "The Calcium Myth",
+      "body": "Reducing dietary calcium actually increases oxalate stone risk — because calcium in the gut normally binds oxalate and removes it in stool. Without calcium, oxalate absorbs into blood and reaches kidneys."
+    },
+    {
+      "id": "ks5",
+      "emoji": "🥩",
+      "title": "Uric Acid Stones",
+      "body": "High protein (especially red meat, organ meat, fish) produces uric acid as a byproduct. Excess uric acid forms stones — the same process that causes gout. Reduce non-veg intake if you get recurrent stones."
+    },
+    {
+      "id": "ks6",
+      "emoji": "🍋",
+      "title": "Citrate Prevents Stones",
+      "body": "Citrate (from lemon and lime) binds to calcium in the kidneys and prevents crystals from forming. Drinking nimbu pani (lemon water) without sugar daily is one of the best natural stone preventers."
+    },
+    {
+      "id": "ks7",
+      "emoji": "🌡️",
+      "title": "Pain — What Happens",
+      "body": "When a stone moves from the kidney into the narrow ureter (tube to bladder), it causes intense cramping pain in the side, back, or groin. Pain comes in waves. Small stones (< 5mm) usually pass on their own with hydration."
+    }
+  ],
+  "doEat": [
+    { "name": "Water (3–4 litres/day)", "emoji": "💧", "note": "Most important intervention — dilutes all stone-forming minerals" },
+    { "name": "Lemon water (no sugar)", "emoji": "🍋", "note": "Citrate inhibits calcium crystal formation" },
+    { "name": "Coconut water", "emoji": "🥥", "note": "Hydrating, with some stone-inhibiting properties" },
+    { "name": "Low-fat dairy (curd, milk)", "emoji": "🥛", "note": "Calcium WITH meals binds oxalate in gut" },
+    { "name": "Cucumber", "emoji": "🥒", "note": "High water content, hydrating" },
+    { "name": "Watermelon", "emoji": "🍉", "note": "High water + potassium, diuretic effect" },
+    { "name": "Moderate vegetables (cooked)", "emoji": "🥕", "note": "Cooking reduces oxalate in vegetables" },
+    { "name": "Whole grains", "emoji": "🌾", "note": "Inositol and fibre help reduce oxalate absorption" }
+  ],
+  "dontEat": [
+    { "name": "Excess spinach & palak", "emoji": "🥬", "note": "Extremely high oxalate — cook + pair with dairy" },
+    { "name": "Excess tomatoes", "emoji": "🍅", "note": "High oxalate, especially raw" },
+    { "name": "Dark chocolate", "emoji": "🍫", "note": "Very high oxalate content" },
+    { "name": "Excess tea & coffee", "emoji": "☕", "note": "Oxalate + mild dehydrating effect" },
+    { "name": "Red meat & organ meat (if uric acid stones)", "emoji": "🥩", "note": "Raises uric acid production" },
+    { "name": "Very high salt intake", "emoji": "🧂", "note": "Sodium increases calcium in urine" },
+    { "name": "Packaged soft drinks", "emoji": "🥤", "note": "Phosphoric acid (dark colas) promotes stone formation" },
+    { "name": "High-dose vitamin C supplements", "emoji": "💊", "note": "Excess C converts to oxalate in the body" }
+  ],
+  "lifestyle": [
+    "Drink 3–4 litres of water daily — enough to keep urine pale yellow throughout the day.",
+    "Drink extra water in summer, after exercise, or when sweating a lot.",
+    "Have lemon water or nimbu pani (unsweetened) at least once daily.",
+    "Don't restrict calcium — eat normal dairy portions WITH meals to bind oxalate in the gut.",
+    "Get a urine and kidney ultrasound annually if you've had stones before.",
+    "Identify stone type (ask doctor for stone analysis) — calcium-oxalate and uric acid stones need different diets.",
+    "Reduce salt intake — high sodium increases calcium excretion through urine."
+  ],
+  "redFlags": [
+    "Excruciating flank pain (side or back) that comes in waves — may be a stone blocking the ureter",
+    "Blood in urine (pink, red, or brown colour)",
+    "Pain during urination combined with fever — may indicate kidney infection",
+    "Fever above 38.5°C with flank pain — infection above a blocked stone is a medical emergency",
+    "Complete inability to urinate — stone may be blocking both kidneys or the urethra",
+    "Nausea and vomiting with severe pain — emergency room visit needed"
+  ],
+  "quiz": [
+    {
+      "id": "ksq1",
+      "type": "mcq",
+      "q": "What is the single most important thing to prevent kidney stones?",
+      "options": ["Avoiding all dairy", "Drinking 3–4 litres of water daily", "Avoiding all vegetables", "Taking vitamin supplements"],
+      "correct": 1,
+      "why": "Adequate hydration dilutes stone-forming minerals in urine — making crystallisation impossible."
+    },
+    {
+      "id": "ksq2",
+      "type": "tf",
+      "q": "Reducing calcium intake prevents calcium-oxalate kidney stones.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "why": "This is a common myth. Calcium WITH meals binds oxalate in the gut and prevents it from reaching kidneys. Low calcium = more stones."
+    },
+    {
+      "id": "ksq3",
+      "type": "mcq",
+      "q": "What does citrate (from lemon) do in the kidneys?",
+      "options": ["Increases calcium levels", "Binds calcium and prevents crystal formation", "Dissolves existing stones quickly", "Kills bacteria in urine"],
+      "correct": 1,
+      "why": "Citrate binds to calcium in the kidneys, preventing the calcium from bonding with oxalate to form crystals."
+    },
+    {
+      "id": "ksq4",
+      "type": "tf",
+      "q": "Dark urine is a sign that you are drinking enough water.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "why": "Dark yellow urine = concentrated urine = you need more water. Aim for pale yellow urine throughout the day."
+    },
+    {
+      "id": "ksq5",
+      "type": "mcq",
+      "q": "Uric acid stones are most associated with excess intake of:",
+      "options": ["Dairy products", "Red meat and organ meat", "Green vegetables", "Fruit"],
+      "correct": 1,
+      "why": "Red meat and organ meats produce uric acid when metabolised. Excess uric acid in urine forms stones."
+    }
+  ]
+}

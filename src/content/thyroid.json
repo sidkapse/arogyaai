@@ -1,0 +1,127 @@
+{
+  "id": "thyroid",
+  "title": "Thyroid Imbalance",
+  "tagline": "The butterfly gland that controls everything",
+  "hero": "🦋",
+  "color": "purple",
+  "oneLiner": "Your thyroid gland produces hormones that control your metabolism, energy, mood, weight, and heart rate.",
+  "cards": [
+    {
+      "id": "t1",
+      "emoji": "🦋",
+      "title": "What is the Thyroid?",
+      "body": "The thyroid is a small butterfly-shaped gland in your neck. It makes hormones (T3 and T4) that set the speed of almost every process in your body — like the volume knob for your metabolism."
+    },
+    {
+      "id": "t2",
+      "emoji": "🐢",
+      "title": "Hypothyroidism (Under-active)",
+      "body": "When the thyroid makes too little hormone, everything slows down. You feel tired, gain weight, feel cold, have dry skin, and can become constipated. Very common in Indian women."
+    },
+    {
+      "id": "t3",
+      "emoji": "⚡",
+      "title": "Hyperthyroidism (Over-active)",
+      "body": "Too much thyroid hormone speeds everything up — rapid heartbeat, weight loss despite eating well, anxiety, sweating, and trembling hands."
+    },
+    {
+      "id": "t4",
+      "emoji": "🧂",
+      "title": "Iodine is the Building Block",
+      "body": "Thyroid hormones are made from iodine. Too little iodine causes a goitre (swollen thyroid). India's iodised salt programme was created to fix this — use iodised salt, not rock salt, in daily cooking."
+    },
+    {
+      "id": "t5",
+      "emoji": "💊",
+      "title": "Medicine Timing is Critical",
+      "body": "Thyroid medicine (like Thyroxine) must be taken on an empty stomach, 30–60 minutes before food. Taking it with tea, coffee, or milk blocks absorption and the medicine won't work properly."
+    },
+    {
+      "id": "t6",
+      "emoji": "🥦",
+      "title": "Raw Goitrogenic Foods",
+      "body": "Raw cabbage, cauliflower, broccoli, and soy contain compounds that can interfere with thyroid hormone production — especially if iodine is low. Cooking destroys most of this effect."
+    },
+    {
+      "id": "t7",
+      "emoji": "🧪",
+      "title": "TSH Test Explained",
+      "body": "TSH (Thyroid Stimulating Hormone) is produced by the brain. High TSH = thyroid is under-active (brain is shouting to get it working). Low TSH = thyroid is over-active. Normal TSH is 0.4–4.0 mIU/L."
+    }
+  ],
+  "doEat": [
+    { "name": "Iodised salt", "emoji": "🧂", "note": "Essential for T3/T4 production" },
+    { "name": "Seafish (tuna, sardines)", "emoji": "🐟", "note": "Rich in iodine and selenium" },
+    { "name": "Eggs", "emoji": "🥚", "note": "Good iodine + selenium source" },
+    { "name": "Cooked cruciferous veggies", "emoji": "🥦", "note": "Cooking reduces goitrogen effect" },
+    { "name": "Brazil nuts (1–2/day)", "emoji": "🌰", "note": "Extremely rich in selenium (needed for T4→T3 conversion)" },
+    { "name": "Whole grains", "emoji": "🌾", "note": "Zinc supports thyroid enzyme function" },
+    { "name": "Pumpkin & sunflower seeds", "emoji": "🌻", "note": "Zinc source for thyroid" },
+    { "name": "Curd & dairy", "emoji": "🥛", "note": "Iodine-rich; take away from thyroid medicine" }
+  ],
+  "dontEat": [
+    { "name": "Raw cabbage / kale in large amounts", "emoji": "🥬", "note": "Goitrogens block hormone production — cook it" },
+    { "name": "Unfermented soy (tofu, soy milk) in excess", "emoji": "🫘", "note": "May interfere with thyroid hormone" },
+    { "name": "Gluten (if Hashimoto's suspected)", "emoji": "🍞", "note": "Autoimmune thyroid disease may be gluten-triggered" },
+    { "name": "Processed foods with fluoride/chlorine", "emoji": "🧃", "note": "Competes with iodine absorption" },
+    { "name": "Soya milk with thyroid medication", "emoji": "🥛", "note": "Blocks medicine absorption" },
+    { "name": "Excess calcium supplements with medicine", "emoji": "💊", "note": "Blocks thyroxine absorption" }
+  ],
+  "lifestyle": [
+    "Take thyroid medicine first thing in the morning, 30–60 minutes before breakfast or chai.",
+    "Get a TSH test at least once a year (more often if on medication or dose changes).",
+    "Exercise regularly — even a 30-minute walk improves metabolism and reduces hypothyroid fatigue.",
+    "Manage stress — cortisol suppresses thyroid hormone conversion (T4→T3).",
+    "Don't self-adjust medicine dose — always consult your doctor when you change it.",
+    "Use iodised salt in your daily cooking. Switch from rock salt (sendha namak) which has no iodine."
+  ],
+  "redFlags": [
+    "Extreme fatigue, swollen face, or puffiness around eyes that isn't going away",
+    "Heart palpitations or rapid heartbeat at rest — may be hyperthyroidism",
+    "Large swelling on the front of the neck (goitre)",
+    "Sudden unexplained weight gain or loss of 5+ kg over a month",
+    "Mental confusion or memory problems in an older person (can be thyroid-related)"
+  ],
+  "quiz": [
+    {
+      "id": "tq1",
+      "type": "mcq",
+      "q": "In hypothyroidism, TSH levels are:",
+      "options": ["Low", "High", "Normal", "Zero"],
+      "correct": 1,
+      "why": "High TSH means the brain is 'shouting' at the thyroid to work harder — a sign the thyroid is under-active."
+    },
+    {
+      "id": "tq2",
+      "type": "tf",
+      "q": "Thyroid medicine should be taken with morning tea.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "why": "Tea, coffee, and milk block absorption of thyroxine. Always take it on an empty stomach 30–60 min before food."
+    },
+    {
+      "id": "tq3",
+      "type": "mcq",
+      "q": "Which nutrient is the main building block of thyroid hormones?",
+      "options": ["Calcium", "Iron", "Iodine", "Vitamin D"],
+      "correct": 2,
+      "why": "T3 and T4 hormones are literally made from iodine atoms. No iodine = no thyroid hormone."
+    },
+    {
+      "id": "tq4",
+      "type": "tf",
+      "q": "Cooking cabbage or cauliflower makes it safer for thyroid patients.",
+      "options": ["True", "False"],
+      "correct": 0,
+      "why": "Heat destroys most goitrogenic compounds in cruciferous vegetables — cooking them makes them safe to eat."
+    },
+    {
+      "id": "tq5",
+      "type": "mcq",
+      "q": "Which symptom suggests hypothyroidism (under-active thyroid)?",
+      "options": ["Rapid heartbeat and sweating", "Unexplained weight gain and always feeling cold", "Anxiety and shaking hands", "Sudden weight loss"],
+      "correct": 1,
+      "why": "Under-active thyroid slows metabolism — causing weight gain, cold intolerance, fatigue, and dry skin."
+    }
+  ]
+}

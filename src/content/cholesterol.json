@@ -1,0 +1,130 @@
+{
+  "id": "cholesterol",
+  "title": "Cholesterol",
+  "tagline": "Not all fats are villains",
+  "hero": "🫀",
+  "color": "amber",
+  "oneLiner": "Cholesterol is a fat-like substance in your blood. Too much bad cholesterol blocks arteries and raises heart attack risk.",
+  "cards": [
+    {
+      "id": "c1",
+      "emoji": "🫀",
+      "title": "Cholesterol is Not All Bad",
+      "body": "Your body needs cholesterol to make hormones, vitamin D, and digestive juices. The problem starts when levels go too high — especially LDL ('bad') cholesterol."
+    },
+    {
+      "id": "c2",
+      "emoji": "😈",
+      "title": "LDL — The Bad Cholesterol",
+      "body": "LDL particles deposit cholesterol on artery walls, forming plaques. Over years, plaques narrow arteries, reduce blood flow, and can cause a heart attack or stroke."
+    },
+    {
+      "id": "c3",
+      "emoji": "😇",
+      "title": "HDL — The Good Cholesterol",
+      "body": "HDL is like a garbage truck — it picks up excess cholesterol from arteries and takes it back to the liver for disposal. Higher HDL = lower heart risk."
+    },
+    {
+      "id": "c4",
+      "emoji": "⚠️",
+      "title": "Triglycerides — The Hidden Danger",
+      "body": "Triglycerides are another blood fat. High triglycerides (from sugar, refined carbs, and alcohol) combined with low HDL is a common pattern in Indians — very dangerous."
+    },
+    {
+      "id": "c5",
+      "emoji": "🛢️",
+      "title": "Saturated Fat Raises LDL",
+      "body": "Butter, ghee in excess, vanaspati, coconut oil used in large quantities, and fatty meat raise LDL cholesterol. Swap to olive oil, rice bran, or mustard oil in moderate amounts."
+    },
+    {
+      "id": "c6",
+      "emoji": "🥑",
+      "title": "Good Fats Lower LDL",
+      "body": "Monounsaturated and polyunsaturated fats (avocado, nuts, fatty fish, olive oil) actually lower LDL and raise HDL. Fat is not the enemy — the type of fat matters."
+    },
+    {
+      "id": "c7",
+      "emoji": "🌾",
+      "title": "Fibre is Your Cholesterol Mop",
+      "body": "Soluble fibre (oats, dal, beans, psyllium husk/isabgol) binds to cholesterol in the gut and carries it out of the body before it enters the blood. Eat more dal, oats, and sabzi."
+    }
+  ],
+  "doEat": [
+    { "name": "Oats", "emoji": "🥣", "note": "Beta-glucan fibre actively lowers LDL" },
+    { "name": "Dal & rajma", "emoji": "🫘", "note": "Soluble fibre binds and removes cholesterol" },
+    { "name": "Fatty fish (rohu, hilsa, mackerel)", "emoji": "🐟", "note": "Omega-3 lowers triglycerides and raises HDL" },
+    { "name": "Walnuts", "emoji": "🪨", "note": "Rich in omega-3, lowers LDL" },
+    { "name": "Almonds", "emoji": "🥜", "note": "Monounsaturated fat, raises HDL" },
+    { "name": "Avocado", "emoji": "🥑", "note": "Oleic acid lowers LDL" },
+    { "name": "Olive oil / mustard oil", "emoji": "🫒", "note": "Unsaturated fat, heart-healthy" },
+    { "name": "Isabgol (psyllium husk)", "emoji": "🌿", "note": "Soluble fibre, proven to lower LDL" },
+    { "name": "Garlic", "emoji": "🧄", "note": "Allicin compound may reduce LDL" },
+    { "name": "Green tea", "emoji": "🍵", "note": "Catechins lower LDL slightly" }
+  ],
+  "dontEat": [
+    { "name": "Vanaspati / dalda", "emoji": "🧈", "note": "Trans fat — worst for LDL and HDL" },
+    { "name": "Fried snacks daily", "emoji": "🍟", "note": "Trans + saturated fat combo" },
+    { "name": "Packaged biscuits & namkeen", "emoji": "🍪", "note": "Often contain trans fats" },
+    { "name": "Red meat in excess", "emoji": "🥩", "note": "Saturated fat raises LDL" },
+    { "name": "Full-fat dairy in large quantities", "emoji": "🧀", "note": "Saturated fat content" },
+    { "name": "Sugary foods & alcohol", "emoji": "🍺", "note": "Raise triglycerides sharply" },
+    { "name": "Coconut oil in large amounts", "emoji": "🥥", "note": "High in saturated fat despite being 'natural'" }
+  ],
+  "lifestyle": [
+    "Exercise for 30 minutes most days — aerobic activity raises HDL (good cholesterol) effectively.",
+    "Quit smoking — smoking directly lowers HDL and damages artery walls.",
+    "Replace refined carbs (white rice, maida) with fibre-rich alternatives to reduce triglycerides.",
+    "Limit alcohol — it is one of the biggest drivers of high triglycerides.",
+    "Get a lipid profile test at least once a year after age 30.",
+    "Manage weight — even 5–10% weight loss significantly improves cholesterol numbers."
+  ],
+  "redFlags": [
+    "Chest pain, tightness, or pressure — especially during activity or climbing stairs",
+    "Pain radiating to the left arm, jaw, or back",
+    "Sudden breathlessness without physical exertion",
+    "Yellow fatty deposits around eyes (xanthelasma) or tendons — sign of very high cholesterol",
+    "LDL above 190 mg/dL on blood test — requires urgent medical review"
+  ],
+  "quiz": [
+    {
+      "id": "cq1",
+      "type": "mcq",
+      "q": "Which type of cholesterol is called 'bad' because it builds up in arteries?",
+      "options": ["HDL", "Triglycerides", "LDL", "VLDL"],
+      "correct": 2,
+      "why": "LDL deposits cholesterol in artery walls forming plaques — hence the 'bad' label."
+    },
+    {
+      "id": "cq2",
+      "type": "tf",
+      "q": "High sugar and alcohol intake can raise triglycerides.",
+      "options": ["True", "False"],
+      "correct": 0,
+      "why": "Excess sugar and alcohol are converted to triglycerides by the liver — a key driver of high triglyceride levels."
+    },
+    {
+      "id": "cq3",
+      "type": "mcq",
+      "q": "Which food actively lowers LDL cholesterol?",
+      "options": ["White bread", "Oats", "Red meat", "Butter"],
+      "correct": 1,
+      "why": "Oats contain beta-glucan, a soluble fibre that binds cholesterol in the gut and removes it from the body."
+    },
+    {
+      "id": "cq4",
+      "type": "tf",
+      "q": "All fat is bad and should be avoided to lower cholesterol.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "why": "Unsaturated fats (nuts, fish, olive oil) actually lower LDL and raise HDL. It's trans fat and excess saturated fat that cause problems."
+    },
+    {
+      "id": "cq5",
+      "type": "mcq",
+      "q": "What does HDL cholesterol do?",
+      "options": ["Builds plaque in arteries", "Transports fat to the liver to be removed", "Raises blood pressure", "Stores energy in fat cells"],
+      "correct": 1,
+      "why": "HDL acts like a garbage truck, collecting excess cholesterol from arteries and returning it to the liver for disposal."
+    }
+  ]
+}

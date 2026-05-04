@@ -1,0 +1,129 @@
+{
+  "id": "gall-stones",
+  "title": "Gall Bladder Stones",
+  "tagline": "Skip meals less, move more",
+  "hero": "🫘",
+  "color": "lime",
+  "oneLiner": "Gall stones form when bile in the gall bladder becomes too concentrated with cholesterol or bile salts, crystallising into stones.",
+  "cards": [
+    {
+      "id": "gs1",
+      "emoji": "🫘",
+      "title": "What is the Gall Bladder?",
+      "body": "The gall bladder is a small pouch under the liver. It stores bile — a digestive juice made by the liver to break down fats. Every time you eat fat, the gall bladder squeezes bile into the small intestine."
+    },
+    {
+      "id": "gs2",
+      "emoji": "💎",
+      "title": "How Stones Form",
+      "body": "Bile normally stays liquid. When bile has too much cholesterol, or when the gall bladder doesn't empty properly, bile concentrates and crystallises into stones ranging from sand-sized to golf ball-sized."
+    },
+    {
+      "id": "gs3",
+      "emoji": "🍔",
+      "title": "Fatty Meals Trigger Pain",
+      "body": "When you eat a fatty meal, the gall bladder contracts strongly to push bile out. If a stone blocks the duct, the muscle cramps against the obstruction — causing intense pain in the upper right abdomen."
+    },
+    {
+      "id": "gs4",
+      "emoji": "⏭️",
+      "title": "Skipping Meals Concentrates Bile",
+      "body": "When you don't eat for long periods, the gall bladder doesn't squeeze and bile sits and concentrates. People who crash-diet or fast often develop gall stones. Regular small meals prevent bile from stagnating."
+    },
+    {
+      "id": "gs5",
+      "emoji": "👩",
+      "title": "Who Gets Gall Stones?",
+      "body": "The classic risk profile: female, forty, fat, fertile (multiple pregnancies). Oestrogen increases cholesterol in bile. Obesity, rapid weight loss, and a sedentary lifestyle are other major risk factors."
+    },
+    {
+      "id": "gs6",
+      "emoji": "🔇",
+      "title": "Silent Stones",
+      "body": "About 80% of gall stones cause no symptoms and are found accidentally on ultrasound. Silent stones usually don't need surgery. Pain only requires intervention — don't operate on an asymptomatic stone unless recommended."
+    },
+    {
+      "id": "gs7",
+      "emoji": "🌿",
+      "title": "Prevention Over Surgery",
+      "body": "Once removed, the gall bladder doesn't grow back — you'll need to manage fat digestion lifelong. Prevention through diet is far better than surgery. Avoid rapid weight loss, maintain healthy weight, eat regular meals."
+    }
+  ],
+  "doEat": [
+    { "name": "High-fibre foods (oats, dal, vegetables)", "emoji": "🥣", "note": "Fibre reduces bile cholesterol concentration" },
+    { "name": "Fruits (apple, pear)", "emoji": "🍎", "note": "Pectin fibre may reduce stone formation" },
+    { "name": "Lean protein (fish, chicken, eggs)", "emoji": "🐟", "note": "Protein without excess fat" },
+    { "name": "Low-fat dairy", "emoji": "🥛", "note": "Calcium may reduce stone risk" },
+    { "name": "Olive oil (small amounts)", "emoji": "🫒", "note": "Good fat that gently stimulates bile flow" },
+    { "name": "Coffee (2 cups)", "emoji": "☕", "note": "Associated with lower gall stone risk" },
+    { "name": "Turmeric", "emoji": "🟡", "note": "Curcumin stimulates bile secretion and flow" },
+    { "name": "Vegetables & greens", "emoji": "🥬", "note": "Magnesium + fibre protective" }
+  ],
+  "dontEat": [
+    { "name": "Very fatty fried foods", "emoji": "🍟", "note": "Trigger intense gall bladder contraction and pain" },
+    { "name": "Full-fat dairy in excess", "emoji": "🧈", "note": "Saturated fat increases bile cholesterol" },
+    { "name": "Red meat in large quantities", "emoji": "🥩", "note": "Saturated fat overloads bile" },
+    { "name": "Refined carbs (maida, sweets)", "emoji": "🍮", "note": "Raise blood cholesterol, more in bile" },
+    { "name": "Rapid crash dieting", "emoji": "⚡", "note": "Slows gall bladder emptying, bile concentrates" },
+    { "name": "Skipping meals or long fasts", "emoji": "🚫", "note": "Bile stagnates and concentrates when you don't eat" }
+  ],
+  "lifestyle": [
+    "Eat 3 regular meals daily — never skip meals as it concentrates bile in the gall bladder.",
+    "Lose weight slowly if needed — rapid weight loss dramatically increases gall stone formation.",
+    "Exercise regularly — physical activity reduces cholesterol in bile.",
+    "Avoid very high-fat meals in a single sitting — small portions of fat are better than one large dose.",
+    "Stay well hydrated — water dilutes bile.",
+    "If you've had stones but no pain, monitor with annual ultrasound. Surgery only if symptomatic.",
+    "After gall bladder removal: eat smaller, more frequent meals and reduce fat gradually — your bile now drips constantly instead of being released in a controlled burst."
+  ],
+  "redFlags": [
+    "Severe pain in the upper right abdomen lasting more than 30 minutes after a meal",
+    "Pain radiating to the right shoulder or back",
+    "Fever with upper abdominal pain — possible cholecystitis (gall bladder infection)",
+    "Yellowing of skin or eyes (jaundice) — stone blocking the bile duct",
+    "Nausea and vomiting that doesn't resolve",
+    "Clay-coloured stool and dark urine — bile duct obstruction"
+  ],
+  "quiz": [
+    {
+      "id": "gsq1",
+      "type": "mcq",
+      "q": "What does the gall bladder store?",
+      "options": ["Insulin", "Bile (for fat digestion)", "Blood cells", "Digestive acid"],
+      "correct": 1,
+      "why": "The gall bladder stores bile made by the liver. Bile is released when you eat fat to help break it down for absorption."
+    },
+    {
+      "id": "gsq2",
+      "type": "tf",
+      "q": "Skipping meals can contribute to gall stone formation.",
+      "options": ["True", "False"],
+      "correct": 0,
+      "why": "When you skip meals, the gall bladder doesn't empty. Bile sits and concentrates, leading to stone formation over time."
+    },
+    {
+      "id": "gsq3",
+      "type": "mcq",
+      "q": "Why does eating a fatty meal cause pain in gall stone patients?",
+      "options": ["Fat irritates the stomach", "The gall bladder contracts to release bile and a stone blocks the duct", "Fat raises blood pressure", "Fatty food is hard to digest"],
+      "correct": 1,
+      "why": "Fatty food triggers strong gall bladder contractions. If a stone blocks the duct, the contraction against the obstruction causes intense pain."
+    },
+    {
+      "id": "gsq4",
+      "type": "tf",
+      "q": "All gall stones require surgery to remove.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "why": "About 80% of gall stones are 'silent' (cause no symptoms). Only symptomatic stones causing pain or complications need surgery."
+    },
+    {
+      "id": "gsq5",
+      "type": "mcq",
+      "q": "Which of these habits increases gall stone risk?",
+      "options": ["Eating 3 regular meals", "Crash dieting and rapid weight loss", "Regular exercise", "Drinking water"],
+      "correct": 1,
+      "why": "Rapid weight loss slows gall bladder emptying and dramatically increases cholesterol in bile — a major trigger for stone formation."
+    }
+  ]
+}

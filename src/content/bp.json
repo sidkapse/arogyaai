@@ -1,0 +1,132 @@
+{
+  "id": "bp",
+  "title": "Blood Pressure",
+  "tagline": "The silent killer you can control",
+  "hero": "💢",
+  "color": "rose",
+  "oneLiner": "Blood pressure is the force your blood exerts on artery walls. Too high for too long damages your heart, brain, and kidneys silently.",
+  "cards": [
+    {
+      "id": "bp1",
+      "emoji": "💢",
+      "title": "What Do the Numbers Mean?",
+      "body": "BP is written as 120/80 mmHg. The top number (systolic) is pressure when your heart beats. The bottom (diastolic) is pressure when it rests. Normal is below 120/80. High BP (hypertension) starts at 130/80 or above."
+    },
+    {
+      "id": "bp2",
+      "emoji": "🤫",
+      "title": "Silent Killer — No Symptoms",
+      "body": "High BP usually causes no symptoms for years while quietly damaging arteries, heart, kidneys, and eyes. Most people only discover it during a routine checkup — which is why regular monitoring matters."
+    },
+    {
+      "id": "bp3",
+      "emoji": "🧂",
+      "title": "Salt and BP",
+      "body": "Salt (sodium) makes your body retain water, increasing blood volume, which raises pressure. Indians eat 8–10 g of salt daily — almost double the WHO recommendation of 5 g. Cutting salt is the fastest dietary fix."
+    },
+    {
+      "id": "bp4",
+      "emoji": "🍌",
+      "title": "Potassium Opposes Sodium",
+      "body": "Potassium helps your kidneys flush out excess sodium and relaxes artery walls. Foods rich in potassium (bananas, coconut water, leafy greens, sweet potato) naturally counteract high salt intake."
+    },
+    {
+      "id": "bp5",
+      "emoji": "😤",
+      "title": "Stress Spikes BP Instantly",
+      "body": "Stress releases adrenaline and cortisol, which make your heart beat faster and blood vessels constrict. Chronic stress leads to chronic high BP. Managing stress is as important as cutting salt."
+    },
+    {
+      "id": "bp6",
+      "emoji": "🏋️",
+      "title": "Exercise Strengthens the Heart",
+      "body": "Regular aerobic exercise makes the heart more efficient so it pumps with less force, reducing resting BP by 5–8 mmHg — similar to some BP medications. Even brisk walking counts."
+    },
+    {
+      "id": "bp7",
+      "emoji": "🍺",
+      "title": "Alcohol, Smoking & BP",
+      "body": "Smoking causes immediate BP spikes and damages artery lining. Alcohol raises BP, especially when consumed heavily. Both dramatically increase stroke risk when combined with hypertension."
+    }
+  ],
+  "doEat": [
+    { "name": "Banana", "emoji": "🍌", "note": "Potassium counteracts sodium" },
+    { "name": "Coconut water", "emoji": "🥥", "note": "Natural potassium and magnesium" },
+    { "name": "Sweet potato", "emoji": "🍠", "note": "High potassium, low sodium" },
+    { "name": "Spinach & leafy greens", "emoji": "🥬", "note": "Potassium + magnesium + nitrates" },
+    { "name": "Dal & legumes", "emoji": "🫘", "note": "Magnesium helps relax blood vessels" },
+    { "name": "Oats", "emoji": "🥣", "note": "Soluble fibre lowers systolic BP" },
+    { "name": "Garlic", "emoji": "🧄", "note": "Allicin relaxes blood vessel walls" },
+    { "name": "Flaxseeds", "emoji": "🌾", "note": "Omega-3 and fibre reduce BP" },
+    { "name": "Low-fat curd", "emoji": "🥛", "note": "Calcium and potassium support" },
+    { "name": "Beetroot juice", "emoji": "🍹", "note": "Dietary nitrate converts to nitric oxide, relaxes arteries" }
+  ],
+  "dontEat": [
+    { "name": "Extra salt at the table", "emoji": "🧂", "note": "Adds unnecessary sodium — biggest culprit" },
+    { "name": "Pickles (achar) & papads", "emoji": "🥒", "note": "Extremely high sodium content" },
+    { "name": "Packaged chips & namkeen", "emoji": "🍟", "note": "Hidden high salt content" },
+    { "name": "Canned & processed foods", "emoji": "🥫", "note": "Salt used as preservative" },
+    { "name": "Alcohol", "emoji": "🍺", "note": "Raises BP, especially in excess" },
+    { "name": "Caffeine in excess", "emoji": "☕", "note": "Temporary BP spike, especially in sensitive individuals" },
+    { "name": "Red meat in excess", "emoji": "🥩", "note": "Saturated fat hardens arteries" }
+  ],
+  "lifestyle": [
+    "Reduce salt intake — stop adding extra salt at the table and switch to low-sodium cooking.",
+    "Monitor BP at home once a week. Record readings — patterns help your doctor more than a single reading.",
+    "Walk briskly 30 minutes most days — reduces BP 5–8 points.",
+    "Practice slow breathing or meditation for 10 minutes daily — proven to lower stress hormones.",
+    "Limit alcohol to no more than 1 drink/day; ideally quit completely.",
+    "Maintain a healthy weight — every 1 kg weight loss reduces systolic BP by about 1 mmHg.",
+    "Never stop BP medicines without consulting your doctor, even if you feel fine."
+  ],
+  "redFlags": [
+    "Severe headache with no other cause, especially at the back of the head",
+    "Sudden vision changes or loss — BP damaging blood vessels in eyes",
+    "Chest pain or tightness",
+    "Sudden weakness or numbness on one side of the body — possible stroke",
+    "BP reading above 180/120 mmHg — hypertensive crisis, go to emergency immediately",
+    "Nosebleeds that keep recurring without injury"
+  ],
+  "quiz": [
+    {
+      "id": "bpq1",
+      "type": "mcq",
+      "q": "Normal blood pressure is considered:",
+      "options": ["140/90 mmHg", "120/80 mmHg or below", "130/90 mmHg", "150/100 mmHg"],
+      "correct": 1,
+      "why": "Below 120/80 is normal. 130/80 and above is considered high blood pressure (hypertension)."
+    },
+    {
+      "id": "bpq2",
+      "type": "tf",
+      "q": "High blood pressure always causes headaches and symptoms.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "why": "High BP is known as the 'silent killer' — it rarely causes noticeable symptoms while quietly damaging organs for years."
+    },
+    {
+      "id": "bpq3",
+      "type": "mcq",
+      "q": "Which mineral helps counteract excess sodium and lower BP?",
+      "options": ["Calcium", "Iron", "Potassium", "Zinc"],
+      "correct": 2,
+      "why": "Potassium helps kidneys flush out sodium and relaxes artery walls, directly opposing sodium's BP-raising effect."
+    },
+    {
+      "id": "bpq4",
+      "type": "tf",
+      "q": "Pickles (achar) are fine to eat daily if you have high BP.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "why": "Pickles are preserved with very large amounts of salt — one of the highest sodium foods in Indian diet. Avoid for high BP."
+    },
+    {
+      "id": "bpq5",
+      "type": "mcq",
+      "q": "Regular aerobic exercise reduces resting BP by approximately:",
+      "options": ["0–1 mmHg", "5–8 mmHg", "20–30 mmHg", "No effect on BP"],
+      "correct": 1,
+      "why": "Studies show consistent aerobic exercise reduces resting systolic BP by 5–8 mmHg — equivalent to some medications."
+    }
+  ]
+}
