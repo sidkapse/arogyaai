@@ -54,12 +54,15 @@ npm install
 npm run dev        # Vite dev server @ localhost:5173/arogyaai/
 npm run build      # TypeScript check + Vite bundle + CP 404.html fallback
 npm run preview    # Local preview of production build
+npm run deploy     # Build + deploy to GitHub Pages via gh-pages
 ```
 
 GitHub Pages:
 - Repo: `arogyaai`
-- Base path: `/arogyaai/`
-- Deploy: Commit to `main` → GitHub Actions → Auto-deploy to `username.github.io/arogyaai/`
+- Base path: `/arogyaai/` (set in `vite.config.ts` and `package.json` `homepage` field)
+- Deploy option 1: Commit to `main` → GitHub Actions workflow auto-deploys to `username.github.io/arogyaai/`
+- Deploy option 2: Run `npm run deploy` locally to deploy via gh-pages package
+- **Critical:** `package.json` `homepage` field must match deployment URL for routing to work
 
 ## Key Design Decisions
 

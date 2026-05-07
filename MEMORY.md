@@ -108,6 +108,10 @@ useSettings   → ai.settings    → openaiKey, theme (light/dark/system)
 6. **Chat close** — Single X button in ChatPanel header (not duplicated in drawer)
 7. **404 fallback** — `/arogyaai/404.html` copies from index.html for SPA deep-link reload
 8. **GitHub Pages base** — All assets must reference `/arogyaai/` prefix (set in vite.config.ts `base`)
+9. **package.json homepage** — CRITICAL: Must set `"homepage": "https://sidkapse.github.io/arogyaai/"` for SPA routing on GitHub Pages. Routing fails without this.
+10. **GitHub Pages deploy** — Two options:
+    - **GitHub Actions** (auto): Push to `main` → Actions workflow auto-builds and deploys to GitHub Pages
+    - **gh-pages package** (manual): Run `npm run deploy` locally → builds and uploads `dist/` via gh-pages package (requires `gh-pages` v6.3.0+ dependency)
 
 ## Next Steps (if continuing)
 

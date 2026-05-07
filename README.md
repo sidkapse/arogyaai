@@ -26,9 +26,18 @@ Open http://localhost:5173/arogyaai/
 
 ## GitHub Pages deployment
 
+### Option 1: GitHub Actions (auto-deploy on push)
 1. Push repo to GitHub as `arogyaai`
 2. Go to **Settings → Pages → Source** → set to **GitHub Actions**
 3. Push to `main` — the action builds and deploys automatically
+
+### Option 2: gh-pages (manual deploy)
+```bash
+npm run deploy
+```
+This builds the app and deploys to GitHub Pages via the `gh-pages` package.
+
+**Note:** The `homepage` field in `package.json` must match your GitHub Pages URL: `https://<username>.github.io/arogyaai/`
 
 ## OpenAI API key
 
