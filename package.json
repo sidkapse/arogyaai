@@ -10,8 +10,9 @@
     "build": "tsc -b && vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm version patch --no-git-tag-version && npm run build",
+    "deploy": "gh-pages -d dist",
+    "postdeploy": "git add package.json package-lock.json && git commit -m \"chore: bump version to v$(node -p \\\"require('./package.json').version\\\")\" && git push"
   },
   "dependencies": {
     "clsx": "^2.1.1",
