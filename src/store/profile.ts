@@ -25,10 +25,10 @@ export const useProfile = create<ProfileStore>()(
     }),
     {
       name: 'ai.profile',
-      migrate: (state: any, _version: number) => {
-        // Handle any persisted data structure changes
-        if (!state) return { profile: null };
-        return state as ProfileStore;
+      onRehydrateStorage: () => (_state, error) => {
+        if (error) {
+          console.warn('Failed to rehydrate profile store:', error);
+        }
       },
     },
   ),

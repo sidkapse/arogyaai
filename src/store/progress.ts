@@ -74,10 +74,10 @@ export const useProgress = create<ProgressStore>()(
     }),
     {
       name: 'ai.progress',
-      migrate: (state: any, _version: number) => {
-        // Handle any persisted data structure changes
-        if (!state) return { perAilment: {}, xp: 0, streakDays: 0, lastActiveDate: '', badges: [] };
-        return state as ProgressStore;
+      onRehydrateStorage: () => (_state, error) => {
+        if (error) {
+          console.warn('Failed to rehydrate progress store:', error);
+        }
       },
     },
   ),
