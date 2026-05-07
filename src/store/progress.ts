@@ -72,6 +72,13 @@ export const useProgress = create<ProgressStore>()(
       },
       reset: () => set({ perAilment: {}, xp: 0, streakDays: 0, lastActiveDate: '', badges: [] }),
     }),
-    { name: 'ai.progress' },
+    {
+      name: 'ai.progress',
+      migrate: (state: any, _version: number) => {
+        // Handle any persisted data structure changes
+        if (!state) return { perAilment: {}, xp: 0, streakDays: 0, lastActiveDate: '', badges: [] };
+        return state as ProgressStore;
+      },
+    },
   ),
 );

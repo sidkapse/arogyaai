@@ -30,7 +30,11 @@ export const useSettings = create<SettingsStore>()(
       name: 'ai.settings',
       onRehydrateStorage: () => (state) => {
         // Sync i18n with persisted language on app load
-        if (state?.language) i18n.changeLanguage(state.language);
+        try {
+          if (state?.language) i18n.changeLanguage(state.language);
+        } catch (e) {
+          console.warn('Failed to sync i18n on rehydrate:', e);
+        }
       },
     },
   ),

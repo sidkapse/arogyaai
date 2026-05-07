@@ -23,7 +23,14 @@ export const useProfile = create<ProfileStore>()(
       setProfile: (profile) => set({ profile }),
       signOut: () => set({ profile: null }),
     }),
-    { name: 'ai.profile' },
+    {
+      name: 'ai.profile',
+      migrate: (state: any, _version: number) => {
+        // Handle any persisted data structure changes
+        if (!state) return { profile: null };
+        return state as ProfileStore;
+      },
+    },
   ),
 );
 
