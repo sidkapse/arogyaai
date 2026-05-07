@@ -1,5 +1,6 @@
 {
   "name": "arogyaai",
+  "homepage": "https://sidkapse.github.io/arogyaai/",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -8,11 +9,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
-    "typecheck": "tsc -b --noEmit"
+    "typecheck": "tsc -b --noEmit",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.17",
+    "gh-pages": "^6.3.0",
     "i18next": "^26.0.8",
     "lucide-react": "^0.460.0",
     "openai": "^4.73.1",
