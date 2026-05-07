@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'>
+  <rect width='512' height='512' rx='112.64' fill='#10b981'/>
+  <g transform='translate(76.8, 76.8)'>
+    <!-- Medical cross -->
+    <rect x='136.19199999999998' y='53.76' width='86.01599999999999' height='250.87999999999997' rx='14.335999999999999' fill='#fff'/>
+    <rect x='53.76' y='136.19199999999998' width='250.87999999999997' height='86.01599999999999' rx='14.335999999999999' fill='#fff'/>
+  </g>
+</svg>
