@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Eye, EyeOff, CheckCircle, XCircle, RefreshCw, LogOut, Moon, Sun, Monitor } from 'lucide-react';
+import { Eye, EyeOff, CheckCircle, XCircle, RefreshCw, LogOut, Moon, Sun, Monitor, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { useSettings } from '../store/settings';
 import { useProfile } from '../store/profile';
 import { useProgress } from '../store/progress';
@@ -11,9 +12,11 @@ import { onNeedRefresh, applyUpdate } from '../pwa/registerSW';
 import { ALL_BADGES } from '../lib/badges';
 import { BadgeChip } from '../components/BadgeChip';
 import { BottomNav } from '../components/BottomNav';
+import { LanguageToggle } from '../components/LanguageToggle';
 
 export function SettingsRoute() {
-  const { openaiKey, setKey, theme, setTheme } = useSettings();
+  const { t } = useTranslation();
+  const { openaiKey, setKey, theme, setTheme, language, setLanguage } = useSettings();
   const { signOut } = useProfile();
   const { badges, reset: resetProgress } = useProgress();
   const navigate = useNavigate();
@@ -40,7 +43,7 @@ export function SettingsRoute() {
   };
 
   const handleReset = () => {
-    if (!confirm('This will delete your profile and all progress. Continue?')) return;
+    if (!confirm(t('settings.confirmReset'))) return;
     resetProgress();
     signOut();
     localStorage.clear();
@@ -50,11 +53,13 @@ export function SettingsRoute() {
   return (
     <div className="min-h-screen pb-24">
       <div className="px-5 pt-12 pb-6 bg-gradient-to-br from-slate-700 to-slate-900 text-white">
-        <h1 className="text-2xl font-extrabold">Settings ⚙️</h1>
+        <div className="flex items-center justify-between gap-2">
+          <h1 className="text-2xl font-extrabold">{t('settings.title')}</h1>
+          <LanguageToggle />
+        </div>
       </div>
 
       <div className="px-4 py-6 space-y-6 max-w-lg mx-auto">
-        {/* update banner */}
         {updateAvailable && (
           <motion.div
             initial={{ opacity: 0, y: -8 }}
@@ -62,22 +67,47 @@ export function SettingsRoute() {
             className="flex items-center justify-between rounded-2xl bg-brand-50 dark:bg-brand-900/30 border border-brand-200 dark:border-brand-700 px-4 py-3"
           >
             <div>
-              <p className="font-semibold text-brand-700 dark:text-brand-300 text-sm">Update available</p>
-              <p className="text-xs text-brand-500">Restart to apply new version</p>
+              <p className="font-semibold text-brand-700 dark:text-brand-300 text-sm">{t('settings.updateAvailable')}</p>
+              <p className="text-xs text-brand-500">{t('settings.updateClick')}</p>
             </div>
             <button
               onClick={applyUpdate}
               className="flex items-center gap-1.5 rounded-full bg-brand-500 text-white px-3 py-1.5 text-xs font-semibold"
             >
-              <RefreshCw size={12} /> Update
+              <RefreshCw size={12} /> {t('settings.update')}
             </button>
           </motion.div>
         )}
 
+        {/* Language */}
+        <section className="rounded-3xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 p-5 space-y-3">
+          <h2 className="font-bold text-slate-700 dark:text-slate-200 flex items-center gap-2">
+            <Globe size={16} /> {t('settings.language')}
+          </h2>
+          <div className="flex gap-2">
+            {([
+              { v: 'en' as const, label: t('settings.languageEn') },
+              { v: 'hi' as const, label: t('settings.languageHi') },
+            ]).map(({ v, label }) => (
+              <button
+                key={v}
+                onClick={() => setLanguage(v)}
+                className={`flex-1 flex items-center justify-center gap-1.5 rounded-2xl border py-2.5 text-sm font-medium transition-colors ${
+                  language === v
+                    ? 'bg-brand-500 border-brand-500 text-white'
+                    : 'border-slate-200 dark:border-slate-600 text-slate-600 dark:text-slate-400 hover:border-brand-300'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </section>
+
         {/* API key */}
         <section className="rounded-3xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 p-5 space-y-3">
-          <h2 className="font-bold text-slate-700 dark:text-slate-200">OpenAI API Key</h2>
-          <p className="text-xs text-slate-400">Used for AI Tutor chat. Stored only on this device.</p>
+          <h2 className="font-bold text-slate-700 dark:text-slate-200">{t('settings.apiKey')}</h2>
+          <p className="text-xs text-slate-400">{t('settings.apiKeyHint')}</p>
           <div className="flex gap-2">
             <div className="relative flex-1">
               <input
@@ -100,14 +130,14 @@ export function SettingsRoute() {
               onClick={saveKey}
               className="flex-1 rounded-full bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-200 text-sm font-semibold py-2 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
             >
-              Save
+              {t('settings.save')}
             </button>
             <button
               onClick={handleTest}
               disabled={testing || !draftKey.trim()}
               className="flex-1 rounded-full bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold py-2 disabled:opacity-40 transition-colors"
             >
-              {testing ? 'Testing…' : 'Test Key'}
+              {testing ? t('settings.testing') : t('settings.testKey')}
             </button>
           </div>
           {testResult && (
@@ -117,19 +147,19 @@ export function SettingsRoute() {
                 : 'bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400'
             }`}>
               {testResult.ok ? <CheckCircle size={15} /> : <XCircle size={15} />}
-              {testResult.ok ? 'Key works!' : (testResult.error ?? 'Invalid key')}
+              {testResult.ok ? t('settings.keyWorks') : (testResult.error ?? t('settings.invalidKey'))}
             </div>
           )}
         </section>
 
-        {/* theme */}
+        {/* Theme */}
         <section className="rounded-3xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 p-5 space-y-3">
-          <h2 className="font-bold text-slate-700 dark:text-slate-200">Theme</h2>
+          <h2 className="font-bold text-slate-700 dark:text-slate-200">{t('settings.theme')}</h2>
           <div className="flex gap-2">
             {([
-              { v: 'light', icon: <Sun size={15} />, label: 'Light' },
-              { v: 'dark', icon: <Moon size={15} />, label: 'Dark' },
-              { v: 'system', icon: <Monitor size={15} />, label: 'System' },
+              { v: 'light', icon: <Sun size={15} />, label: t('settings.light') },
+              { v: 'dark', icon: <Moon size={15} />, label: t('settings.dark') },
+              { v: 'system', icon: <Monitor size={15} />, label: t('settings.system') },
             ] as const).map(({ v, icon, label }) => (
               <button
                 key={v}
@@ -146,9 +176,8 @@ export function SettingsRoute() {
           </div>
         </section>
 
-        {/* badges */}
         <section className="rounded-3xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 p-5 space-y-3">
-          <h2 className="font-bold text-slate-700 dark:text-slate-200">Badges</h2>
+          <h2 className="font-bold text-slate-700 dark:text-slate-200">{t('settings.badges')}</h2>
           <div className="flex flex-wrap gap-2">
             {ALL_BADGES.map((b) => (
               <BadgeChip key={b.id} badge={b} earned={badges.includes(b.id)} />
@@ -156,24 +185,22 @@ export function SettingsRoute() {
           </div>
         </section>
 
-        {/* app info */}
         <section className="rounded-3xl bg-white dark:bg-slate-800 shadow-sm border border-slate-100 dark:border-slate-700 p-5 space-y-1">
-          <h2 className="font-bold text-slate-700 dark:text-slate-200 mb-2">App Info</h2>
-          <p className="text-xs text-slate-400">App version: <span className="font-mono text-slate-600 dark:text-slate-300">{APP_VERSION}</span></p>
-          <p className="text-xs text-slate-400">SW version: <span className="font-mono text-slate-600 dark:text-slate-300">{SW_VERSION}</span></p>
+          <h2 className="font-bold text-slate-700 dark:text-slate-200 mb-2">{t('settings.appInfo')}</h2>
+          <p className="text-xs text-slate-400">{t('settings.appVersion')}: <span className="font-mono text-slate-600 dark:text-slate-300">{APP_VERSION}</span></p>
+          <p className="text-xs text-slate-400">{t('settings.swVersion')}: <span className="font-mono text-slate-600 dark:text-slate-300">{SW_VERSION}</span></p>
         </section>
 
-        {/* danger zone */}
         <section className="rounded-3xl bg-red-50 dark:bg-red-900/20 border border-red-100 dark:border-red-800 p-5 space-y-3">
-          <h2 className="font-bold text-red-600 dark:text-red-400">Danger Zone</h2>
+          <h2 className="font-bold text-red-600 dark:text-red-400">{t('settings.dangerZone')}</h2>
           <button
             onClick={handleReset}
             className="w-full flex items-center justify-center gap-2 rounded-full border border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 py-2.5 text-sm font-semibold hover:bg-red-100 dark:hover:bg-red-900/40 transition-colors"
           >
             <LogOut size={15} />
-            Reset Profile &amp; All Data
+            {t('settings.resetProfile')}
           </button>
-          <p className="text-xs text-red-400 text-center">This clears everything from this device.</p>
+          <p className="text-xs text-red-400 text-center">{t('settings.resetWarning')}</p>
         </section>
       </div>
 

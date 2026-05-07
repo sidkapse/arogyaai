@@ -31,6 +31,24 @@
       "body": "White rice and maida (refined wheat) digest fast, flooding your blood with glucose quickly. Choosing brown rice, millets, or whole-wheat roti in smaller portions slows this spike."
     },
     {
+      "id": "d_carb1",
+      "emoji": "🌾",
+      "title": "3 Types of Carbs",
+      "body": "Not all carbs behave the same. Sugars (simple carbs) digest fast and spike blood sugar quickly — found in sweets, juice, and packaged foods. Starches (complex carbs) are long chains of sugar — wholegrain versions digest slower. Fiber cannot be digested at all — it slows glucose entry into your blood."
+    },
+    {
+      "id": "d_carb2",
+      "emoji": "🧵",
+      "title": "Fiber: The Hidden Protector",
+      "body": "Dietary fiber forms a physical barrier in your gut that slows glucose absorption. Soluble fiber — found in oats, rajma, dal, apples, and fenugreek — is especially powerful. Eating carbs alongside fiber-rich foods can reduce post-meal blood sugar spikes by 20–30%."
+    },
+    {
+      "id": "d_carb3",
+      "emoji": "🍽️",
+      "title": "The ¼ Plate Rule",
+      "body": "Build every meal like this: ½ plate non-starchy vegetables (spinach, cucumber, bhindi, tomato) → ¼ plate starchy carbs (rice, roti, potato) → ¼ plate protein (dal, eggs, paneer, fish). Eat in this order too — vegetables first, carbs last. This sequence alone cuts post-meal spikes significantly."
+    },
+    {
       "id": "d5",
       "emoji": "🏃",
       "title": "Exercise is Like a Second Insulin",
@@ -65,7 +83,10 @@
     { "name": "Eggs & fish", "emoji": "🥚", "note": "Protein doesn't spike blood sugar" },
     { "name": "Nuts & seeds", "emoji": "🥜", "note": "Healthy fat + protein, stabilises sugar" },
     { "name": "Curd / Greek yoghurt", "emoji": "🥛", "note": "Probiotics help insulin sensitivity" },
-    { "name": "Cinnamon in chai", "emoji": "🫙", "note": "May improve insulin sensitivity" }
+    { "name": "Cinnamon in chai", "emoji": "🫙", "note": "May improve insulin sensitivity" },
+    { "name": "Sweet potato (shakarkandi)", "emoji": "🍠", "note": "Lower GI than white potato; skin adds extra fibre" },
+    { "name": "Steel-cut / rolled oats", "emoji": "🥣", "note": "Beta-glucan fibre; very slow, steady glucose rise" },
+    { "name": "Barley (jau)", "emoji": "🌿", "note": "Lowest GI grain; forms gel in gut that blunts glucose spike" }
   ],
   "dontEat": [
     { "name": "Maida (white flour)", "emoji": "🍞", "note": "Fast-digesting, big sugar spike" },
@@ -75,7 +96,9 @@
     { "name": "Fried snacks", "emoji": "🍟", "note": "Trans fat worsens insulin resistance" },
     { "name": "Packaged biscuits & namkeen", "emoji": "🍪", "note": "Hidden sugar + refined carbs" },
     { "name": "Alcohol", "emoji": "🍺", "note": "Unpredictable sugar swings, especially on medication" },
-    { "name": "Sweetened curd / flavoured milk", "emoji": "🧋", "note": "Added sugar spike" }
+    { "name": "Sweetened curd / flavoured milk", "emoji": "🧋", "note": "Added sugar spike" },
+    { "name": "White bread / pav / burger bun", "emoji": "🍞", "note": "Refined flour, zero fibre — GI almost as high as pure sugar" },
+    { "name": "Instant noodles (Maggi / Top Ramen)", "emoji": "🍜", "note": "Maida base + high sodium — fast glucose spike, zero nutrition" }
   ],
   "lifestyle": [
     "Walk for at least 30 minutes after your largest meal — reduces post-meal glucose spike by up to 30%.",
@@ -84,7 +107,10 @@
     "Avoid eating fruit as juice — always eat whole fruit with the fibre.",
     "Sleep 7–8 hours. Even one bad night's sleep increases insulin resistance the next day.",
     "Practice 5-minute deep breathing or meditation daily to lower cortisol (stress hormone that raises sugar).",
-    "Stay hydrated — dehydration concentrates blood glucose. Aim for 8–10 glasses of water daily."
+    "Stay hydrated — dehydration concentrates blood glucose. Aim for 8–10 glasses of water daily.",
+    "Eat vegetables before your rice or roti at every meal — 'veggie-first' order reduces post-meal glucose spike by up to 30%.",
+    "Pair every carb with protein or fat: rice with dal, roti with paneer or egg, oats with nuts. Protein and fat slow down carb digestion.",
+    "Spread your carb intake evenly across all 3 meals — eating all your carbs in one sitting (e.g., heavy dinner) causes a large single spike."
   ],
   "redFlags": [
     "Blood sugar above 300 mg/dL or you feel confused or very drowsy",
@@ -130,10 +156,10 @@
     {
       "id": "dq5",
       "type": "mcq",
-      "q": "Pre-diabetes can be reversed by:",
-      "options": ["Only medicines", "Diet changes and 5–7% weight loss", "Eating less sugar only", "It cannot be reversed"],
-      "correct": 1,
-      "why": "Multiple studies show diet changes and modest weight loss fully reverse pre-diabetes in many people."
+      "q": "Which type of carbohydrate helps slow down blood sugar rise after a meal?",
+      "options": ["Added sugar", "Refined white starch", "Dietary fiber", "High-fructose corn syrup"],
+      "correct": 2,
+      "why": "Fiber cannot be digested — it forms a slow-down barrier in your gut that reduces the speed of glucose absorption, giving a gentler blood sugar curve."
     }
   ]
 }

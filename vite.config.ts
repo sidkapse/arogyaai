@@ -7,7 +7,7 @@ const pkg = JSON.parse(readFileSync('./package.json', 'utf-8')) as { version: st
 const SW_VERSION = `${pkg.version}-${Date.now()}`;
 
 export default defineConfig({
-  base: '/aliments-info/',
+  base: '/arogyaai/',
   plugins: [
     react(),
     VitePWA({
@@ -20,8 +20,8 @@ export default defineConfig({
         theme_color: '#10b981',
         background_color: '#ffffff',
         display: 'standalone',
-        start_url: '/aliments-info/',
-        scope: '/aliments-info/',
+        start_url: '/arogyaai/',
+        scope: '/arogyaai/',
         icons: [
           { src: 'icons/icon-192.svg', sizes: '192x192', type: 'image/svg+xml' },
           { src: 'icons/icon-512.svg', sizes: '512x512', type: 'image/svg+xml' },

@@ -1,8 +1,8 @@
-# Aliments Info
+# ArogyaAI
 
-> Interactive PWA teaching Indians how to manage 9 common ailments through gamified micro-lessons.
+> Learn to manage common Indian ailments through AI-powered gamified micro-lessons.
 
-**Live app:** https://&lt;your-github-username&gt;.github.io/aliments-info/
+**Live app:** https://&lt;your-github-username&gt;.github.io/arogyaai/
 
 ## What it does
 
@@ -22,11 +22,11 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:5173/aliments-info/
+Open http://localhost:5173/arogyaai/
 
 ## GitHub Pages deployment
 
-1. Push repo to GitHub as `aliments-info`
+1. Push repo to GitHub as `arogyaai`
 2. Go to **Settings → Pages → Source** → set to **GitHub Actions**
 3. Push to `main` — the action builds and deploys automatically
 

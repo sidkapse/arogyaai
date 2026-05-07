@@ -1,5 +1,6 @@
 import { motion, type PanInfo } from 'framer-motion';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import type { ConceptCard as ConceptCardType } from '../lib/content';
 import type { AilmentPalette } from '../lib/colors';
 
@@ -13,6 +14,7 @@ type Props = {
 };
 
 export function ConceptCard({ card, index, total, onNext, onPrev, palette }: Props) {
+  const { t } = useTranslation();
   const handleDragEnd = (_: unknown, info: PanInfo) => {
     if (info.offset.x > 80 || info.velocity.x > 400) {
       onPrev();
@@ -22,7 +24,7 @@ export function ConceptCard({ card, index, total, onNext, onPrev, palette }: Pro
   };
 
   return (
-    <div className="flex flex-col items-center gap-5 select-none">
+    <div className="flex flex-col items-center gap-5">
       {/* Progress pips */}
       <div className="flex gap-1.5 flex-wrap justify-center max-w-xs">
         {Array.from({ length: total }).map((_, i) => (
@@ -40,7 +42,7 @@ export function ConceptCard({ card, index, total, onNext, onPrev, palette }: Pro
 
       {/* Card count */}
       <p className="text-xs font-semibold text-slate-400 -mt-2">
-        {index + 1} of {total}
+        {t('ailment.ofN', { n: index + 1, total })}
       </p>
 
       {/* Draggable card */}
@@ -79,7 +81,7 @@ export function ConceptCard({ card, index, total, onNext, onPrev, palette }: Pro
         </div>
 
         {/* Text */}
-        <div className="px-6 pb-7 pt-4 bg-white dark:bg-slate-800">
+        <div className="px-6 pb-7 pt-4 bg-white dark:bg-slate-800 select-text">
           <h2
             className="text-xl font-extrabold mb-3 text-center leading-tight"
             style={{ color: palette.hex700 }}
@@ -106,7 +108,7 @@ export function ConceptCard({ card, index, total, onNext, onPrev, palette }: Pro
           }}
         >
           <ChevronLeft size={16} />
-          Back
+          {t('common.back')}
         </motion.button>
 
         <motion.button
@@ -116,12 +118,12 @@ export function ConceptCard({ card, index, total, onNext, onPrev, palette }: Pro
           className="flex-1 flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold text-white shadow-lg transition-all text-sm"
           style={{ background: palette.gradient }}
         >
-          {index + 1 < total ? 'Next' : 'Diet'}
+          {index + 1 < total ? t('common.next') : t('ailment.diet')}
           <ChevronRight size={16} />
         </motion.button>
       </div>
 
-      <p className="text-xs text-slate-400 text-center">swipe ← / → or use buttons</p>
+      <p className="text-xs text-slate-400 text-center">{t('ailment.swipeHint')}</p>
     </div>
   );
 }

@@ -20,7 +20,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['"Inter"', 'system-ui', 'sans-serif'],
+        sans: ['"Inter"', '"Noto Sans Devanagari"', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         pop: {

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, XCircle, ChevronRight, Star } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import type { QuizQuestion } from '../lib/content';
 import type { AilmentPalette } from '../lib/colors';
 import clsx from 'clsx';
@@ -12,6 +13,7 @@ type Props = {
 };
 
 export function Quiz({ questions, onComplete, palette }: Props) {
+  const { t } = useTranslation();
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [answers, setAnswers] = useState<boolean[]>([]);
@@ -52,26 +54,24 @@ export function Quiz({ questions, onComplete, palette }: Props) {
           {pass ? '🎉' : '💪'}
         </div>
         <h2 className="text-2xl font-extrabold text-slate-800 dark:text-slate-100">
-          {pass ? 'Nailed it!' : 'Keep going!'}
+          {pass ? t('quiz.nailedIt') : t('quiz.keepGoing')}
         </h2>
         <div className="text-6xl font-extrabold" style={{ color: palette.hex500 }}>
           {score}%
         </div>
         <p className="text-slate-400 font-medium">
-          {answers.filter(Boolean).length} / {questions.length} correct
+          {t('quiz.outOf', { correct: answers.filter(Boolean).length, total: questions.length })}
         </p>
         {pass && (
           <div
             className="flex items-center gap-2 rounded-full px-5 py-2 font-bold text-sm text-white shadow-md"
             style={{ background: palette.gradient }}
           >
-            <Star size={14} fill="white" /> +50 XP earned
+            <Star size={14} fill="white" /> {t('quiz.xpEarned')}
           </div>
         )}
         <p className="text-sm text-slate-400 max-w-xs leading-relaxed">
-          {pass
-            ? 'Section complete! Move on to the next ailment.'
-            : 'Score ≥80% to mark this section complete. Try again anytime!'}
+          {pass ? t('quiz.passMsg') : t('quiz.failMsg')}
         </p>
       </motion.div>
     );
@@ -81,8 +81,8 @@ export function Quiz({ questions, onComplete, palette }: Props) {
     <div className="w-full max-w-md mx-auto">
       {/* Progress bar */}
       <div className="flex justify-between text-xs text-slate-400 mb-1.5">
-        <span>Question {idx + 1} / {questions.length}</span>
-        <span>{answers.filter(Boolean).length} correct</span>
+        <span>{t('quiz.question', { n: idx + 1, total: questions.length })}</span>
+        <span>{t('quiz.correctSoFar', { n: answers.filter(Boolean).length })}</span>
       </div>
       <div className="h-2 bg-slate-200 dark:bg-slate-700 rounded-full mb-6 overflow-hidden">
         <motion.div
@@ -163,7 +163,7 @@ export function Quiz({ questions, onComplete, palette }: Props) {
                   : 'bg-amber-50 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300 border border-amber-200'
               }`}
             >
-              <span className="font-bold">{correct ? '✅ Correct! ' : '❌ Not quite. '}</span>
+              <span className="font-bold">{correct ? t('quiz.correct') : t('quiz.incorrect')}</span>
               {q.why}
             </motion.div>
           )}
@@ -180,7 +180,7 @@ export function Quiz({ questions, onComplete, palette }: Props) {
                 : { background: '#e2e8f0', color: '#94a3b8', cursor: 'not-allowed' }
             }
           >
-            {idx + 1 < questions.length ? 'Next Question' : 'See Results'}
+            {idx + 1 < questions.length ? t('quiz.nextQuestion') : t('quiz.seeResults')}
             <ChevronRight size={16} />
           </motion.button>
         </motion.div>

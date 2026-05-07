@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, MessageCircle, BookOpen, Utensils, Heart, AlertTriangle, HelpCircle } from 'lucide-react';
-import { getAilment } from '../lib/content';
+import { ArrowLeft, MessageCircle, BookOpen, Utensils, Heart, AlertTriangle, HelpCircle, ChevronRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { useAilmentContent } from '../lib/content';
 import { getPalette } from '../lib/colors';
 import { useProgress } from '../store/progress';
 import { evaluateBadges } from '../lib/badges';
@@ -10,14 +11,16 @@ import { ConceptCard } from '../components/ConceptCard';
 import { Quiz } from '../components/Quiz';
 import { ChatPanel } from '../components/ChatPanel';
 import { BadgeChip } from '../components/BadgeChip';
+import { LanguageToggle } from '../components/LanguageToggle';
 import clsx from 'clsx';
 
 type Tab = 'learn' | 'food' | 'lifestyle' | 'redflags' | 'quiz';
 
 export function AilmentRoute() {
+  const { t } = useTranslation();
   const { ailmentId } = useParams<{ ailmentId: string }>();
   const navigate = useNavigate();
-  const ailment = getAilment(ailmentId ?? '');
+  const ailment = useAilmentContent(ailmentId);
 
   const { recordCardView, recordQuiz } = useProgress();
   const [cardIdx, setCardIdx] = useState(0);
@@ -35,7 +38,7 @@ export function AilmentRoute() {
   if (!ailment) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <p className="text-slate-500">Ailment not found.</p>
+        <p className="text-slate-500">{t('ailment.ailmentNotFound')}</p>
       </div>
     );
   }
@@ -64,11 +67,11 @@ export function AilmentRoute() {
   };
 
   const TABS: { id: Tab; label: string; icon: React.ReactNode }[] = [
-    { id: 'learn',     label: 'Learn',     icon: <BookOpen size={14} /> },
-    { id: 'food',      label: 'Diet',      icon: <Utensils size={14} /> },
-    { id: 'lifestyle', label: 'Lifestyle', icon: <Heart size={14} /> },
-    { id: 'redflags',  label: 'Red Flags', icon: <AlertTriangle size={14} /> },
-    { id: 'quiz',      label: 'Quiz',      icon: <HelpCircle size={14} /> },
+    { id: 'learn',     label: t('tabs.learn'),     icon: <BookOpen size={14} /> },
+    { id: 'food',      label: t('tabs.diet'),      icon: <Utensils size={14} /> },
+    { id: 'lifestyle', label: t('tabs.lifestyle'), icon: <Heart size={14} /> },
+    { id: 'redflags',  label: t('tabs.redFlags'),  icon: <AlertTriangle size={14} /> },
+    { id: 'quiz',      label: t('tabs.quiz'),      icon: <HelpCircle size={14} /> },
   ];
 
   return (
@@ -88,12 +91,15 @@ export function AilmentRoute() {
           style={{ background: 'rgba(255,255,255,0.4)' }}
         />
 
-        <button
-          onClick={() => navigate(-1)}
-          className="relative flex items-center gap-1.5 text-white/80 mb-5 hover:text-white transition-colors text-sm font-medium"
-        >
-          <ArrowLeft size={18} /> Back
-        </button>
+        <div className="relative flex items-center justify-between mb-5">
+          <button
+            onClick={() => navigate(-1)}
+            className="flex items-center gap-1.5 text-white/80 hover:text-white transition-colors text-sm font-medium"
+          >
+            <ArrowLeft size={18} /> {t('common.back')}
+          </button>
+          <LanguageToggle />
+        </div>
 
         <div className="relative flex items-center gap-4">
           <div
@@ -151,7 +157,7 @@ export function AilmentRoute() {
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-lg">✅</span>
-                  <h3 className="font-bold text-slate-800 dark:text-slate-100 text-base">Good to eat</h3>
+                  <h3 className="font-bold text-slate-800 dark:text-slate-100 text-base">{t('ailment.goodToEat')}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {ailment.doEat.map((f) => (
@@ -172,7 +178,7 @@ export function AilmentRoute() {
               <div>
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-lg">❌</span>
-                  <h3 className="font-bold text-slate-800 dark:text-slate-100 text-base">Avoid these</h3>
+                  <h3 className="font-bold text-slate-800 dark:text-slate-100 text-base">{t('ailment.avoidThese')}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {ailment.dontEat.map((f) => (
@@ -188,6 +194,17 @@ export function AilmentRoute() {
                   ))}
                 </div>
               </div>
+
+              {/* Footer: Next button */}
+              <motion.button
+                whileTap={{ scale: 0.97 }}
+                whileHover={{ scale: 1.02 }}
+                onClick={() => setTab('lifestyle')}
+                className="mt-8 w-full flex items-center justify-center gap-2 rounded-full py-3 font-semibold text-sm transition-all text-white"
+                style={{ background: pal.gradient }}
+              >
+                {t('common.next')} <ChevronRight size={16} />
+              </motion.button>
             </motion.div>
           )}
 
@@ -208,13 +225,24 @@ export function AilmentRoute() {
                   <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">{tip}</p>
                 </div>
               ))}
+
+              {/* Footer: Next button */}
+              <motion.button
+                whileTap={{ scale: 0.97 }}
+                whileHover={{ scale: 1.02 }}
+                onClick={() => setTab('redflags')}
+                className="mt-8 w-full flex items-center justify-center gap-2 rounded-full py-3 font-semibold text-sm transition-all text-white"
+                style={{ background: pal.gradient }}
+              >
+                {t('common.next')} <ChevronRight size={16} />
+              </motion.button>
             </motion.div>
           )}
 
           {tab === 'redflags' && (
             <motion.div key="redflags" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} className="space-y-3">
               <div className="rounded-2xl bg-red-50 dark:bg-red-900/20 border border-red-100 dark:border-red-800 px-4 py-3 mb-4">
-                <p className="text-sm font-semibold text-red-700 dark:text-red-400">🚨 See a doctor immediately if you experience any of these:</p>
+                <p className="text-sm font-semibold text-red-700 dark:text-red-400">{t('ailment.redFlagsIntro')}</p>
               </div>
               {ailment.redFlags.map((flag, i) => (
                 <motion.div
@@ -228,6 +256,17 @@ export function AilmentRoute() {
                   <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">{flag}</p>
                 </motion.div>
               ))}
+
+              {/* Footer: Next button */}
+              <motion.button
+                whileTap={{ scale: 0.97 }}
+                whileHover={{ scale: 1.02 }}
+                onClick={() => setTab('quiz')}
+                className="mt-8 w-full flex items-center justify-center gap-2 rounded-full py-3 font-semibold text-sm transition-all text-white"
+                style={{ background: pal.gradient }}
+              >
+                {t('common.next')} <ChevronRight size={16} />
+              </motion.button>
             </motion.div>
           )}
 
@@ -239,13 +278,34 @@ export function AilmentRoute() {
                   animate={{ opacity: 1, y: 0 }}
                   className="mb-4 p-3 rounded-2xl bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700"
                 >
-                  <p className="text-xs font-semibold text-amber-700 dark:text-amber-300 mb-2">🎖️ New badges earned!</p>
+                  <p className="text-xs font-semibold text-amber-700 dark:text-amber-300 mb-2">{t('ailment.newBadges')}</p>
                   <div className="flex flex-wrap gap-2">
                     {newBadges.map((b) => <BadgeChip key={b.id} badge={b} animate />)}
                   </div>
                 </motion.div>
               )}
               <Quiz questions={ailment.quiz} onComplete={handleQuizComplete} palette={pal} />
+
+              {/* Post-quiz navigation */}
+              {quizDone && (
+                <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-8 flex gap-3">
+                  <motion.button
+                    whileTap={{ scale: 0.97 }}
+                    onClick={() => setTab('learn')}
+                    className="flex-1 flex items-center justify-center gap-2 rounded-full py-3 font-semibold text-sm transition-all border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800"
+                  >
+                    <ArrowLeft size={16} /> {t('common.back')}
+                  </motion.button>
+                  <motion.button
+                    whileTap={{ scale: 0.97 }}
+                    onClick={() => navigate('/home')}
+                    className="flex-1 flex items-center justify-center gap-2 rounded-full py-3 font-semibold text-sm transition-all text-white"
+                    style={{ background: pal.gradient }}
+                  >
+                    {t('ailment.backHome')} <ChevronRight size={16} />
+                  </motion.button>
+                </motion.div>
+              )}
             </motion.div>
           )}
         </AnimatePresence>
@@ -260,7 +320,7 @@ export function AilmentRoute() {
         style={{ background: pal.gradient }}
       >
         <MessageCircle size={17} />
-        Ask AI
+        {t('ailment.askAi')}
       </motion.button>
 
       {/* chat backdrop */}
